@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dr. Bernardo Casarin | Oftalmologista – Santa Rosa RS</title>
+<style>
+  :root{--azul:#0A2E5A;--azul-claro:#1565C0;--ciano:#00B4D8;--ciano-soft:#e8f7fb;--branco:#FFFFFF;--cinza-claro:#F7F9FC;--cinza-texto:#4A5568;--verde-wa:#25D366;--sombra:0 4px 24px rgba(10,46,90,.10);--radius:14px;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',Arial,sans-serif;color:var(--azul);background:var(--branco);}
+  a{text-decoration:none;color:inherit;}
+
+  nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid #e2e8f0;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+  .nav-logo{display:flex;align-items:center;gap:10px;font-size:1rem;font-weight:700;}
+  .nav-logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--ciano);}
+  .nav-logo span{color:var(--ciano);}
+  .nav-cta{background:var(--ciano);color:var(--branco);padding:10px 22px;border-radius:30px;font-size:.85rem;font-weight:700;}
+  .nav-cta:hover{background:var(--azul-claro);}
+
+  .hero{background:linear-gradient(135deg,var(--azul) 0%,#0d3d73 60%,#0A2E5A 100%);color:var(--branco);padding:64px 24px 52px;position:relative;overflow:hidden;}
+  .hero::before{content:'';position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;background:rgba(0,180,216,.12);}
+  .hero-badge{display:inline-block;background:rgba(0,180,216,.18);color:var(--ciano);border:1px solid rgba(0,180,216,.4);border-radius:30px;padding:6px 18px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px;}
+  .hero-inner{display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;position:relative;z-index:1;}
+  .hero-text{text-align:left;max-width:480px;}
+  .hero-text h1{font-size:clamp(1.8rem,4.5vw,2.7rem);font-weight:800;line-height:1.2;margin-bottom:16px;}
+  .hero-text h1 em{color:var(--ciano);font-style:normal;}
+  .hero-text p{font-size:1rem;color:rgba(255,255,255,.82);line-height:1.7;margin-bottom:28px;}
+  .hero-foto img{width:220px;height:220px;border-radius:50%;object-fit:cover;border:5px solid var(--ciano);box-shadow:0 0 40px rgba(0,180,216,.4);}
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{background:var(--ciano);color:var(--branco);padding:14px 30px;border-radius:30px;font-weight:800;font-size:.95rem;box-shadow:0 4px 18px rgba(0,180,216,.35);}
+  .btn-outline{background:transparent;color:var(--branco);border:2px solid rgba(255,255,255,.45);padding:12px 26px;border-radius:30px;font-weight:700;font-size:.9rem;}
+
+  .trust-bar{background:var(--ciano-soft);padding:18px 24px;display:flex;justify-content:center;gap:36px;flex-wrap:wrap;border-bottom:1px solid #c9edf5;}
+  .trust-item{display:flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;}
+
+  section{padding:60px 24px;}
+  .container{max-width:960px;margin:0 auto;}
+  .section-label{display:inline-block;color:var(--ciano);font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;}
+  h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:800;line-height:1.25;margin-bottom:14px;}
+  .subtitle{color:var(--cinza-texto);font-size:.97rem;line-height:1.7;max-width:580px;}
+
+  .problema{background:var(--cinza-claro);}
+  .posts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:32px;}
+  .post-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--sombra);position:relative;aspect-ratio:9/16;background:#111;}
+  .post-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s;}
+  .post-card:hover img{transform:scale(1.04);}
+  .post-overlay{position:absolute;bottom:0;left:0;right:0;padding:16px 14px 14px;background:linear-gradient(to top,rgba(10,46,90,.92) 0%,transparent 100%);color:#fff;}
+  .post-overlay h3{font-size:.88rem;font-weight:700;margin-bottom:4px;}
+  .post-overlay p{font-size:.77rem;opacity:.85;line-height:1.4;}
+
+  .servicos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-top:32px;}
+  .card-serv{background:var(--branco);border-radius:var(--radius);padding:26px 20px;box-shadow:var(--sombra);text-align:center;transition:transform .2s;border:1px solid #e8f0fe;}
+  .card-serv:hover{transform:translateY(-4px);}
+  .card-serv .serv-icon{width:50px;height:50px;border-radius:50%;background:var(--ciano-soft);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:1.3rem;}
+  .card-serv h3{font-size:.9rem;font-weight:700;margin-bottom:7px;}
+  .card-serv p{font-size:.81rem;color:var(--cinza-texto);line-height:1.6;}
+
+  .sobre{background:var(--azul);color:var(--branco);}
+  .sobre-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:44px;align-items:center;}
+  .sobre-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.3);}
+  .sobre-img img{width:100%;height:440px;object-fit:cover;object-position:top;display:block;}
+  .sobre .section-label{color:var(--ciano);}
+  .sobre h2{color:var(--branco);}
+  .credenciais{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:11px;}
+  .credenciais li{display:flex;align-items:flex-start;gap:11px;font-size:.9rem;color:rgba(255,255,255,.85);line-height:1.5;}
+  .credenciais li::before{content:'✓';color:var(--ciano);font-weight:900;flex-shrink:0;}
+  .crm-badges{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;}
+  .badge{background:rgba(0,180,216,.18);border:1px solid rgba(0,180,216,.35);color:var(--ciano);border-radius:8px;padding:6px 14px;font-size:.8rem;font-weight:700;}
+
+  .dif-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:32px;}
+  .card-dif{background:var(--ciano-soft);border-radius:var(--radius);padding:24px 20px;border:1px solid #b8e4f0;}
+  .card-dif .num{font-size:1.9rem;font-weight:900;color:var(--ciano);margin-bottom:8px;}
+  .card-dif h3{font-size:.88rem;font-weight:700;margin-bottom:6px;}
+  .card-dif p{font-size:.81rem;color:var(--cinza-texto);line-height:1.6;}
+
+  .cta-final{background:linear-gradient(135deg,var(--ciano) 0%,var(--azul-claro) 100%);color:var(--branco);text-align:center;padding:68px 24px;}
+  .cta-final h2{color:var(--branco);margin-bottom:14px;}
+  .cta-final p{color:rgba(255,255,255,.85);margin-bottom:32px;font-size:.97rem;max-width:460px;margin-left:auto;margin-right:auto;}
+  .btn-wa{display:inline-flex;align-items:center;gap:12px;background:var(--verde-wa);color:var(--branco);padding:16px 36px;border-radius:30px;font-weight:800;font-size:1rem;box-shadow:0 6px 20px rgba(37,211,102,.4);}
+  .contato-info{margin-top:20px;color:rgba(255,255,255,.7);font-size:.88rem;}
+  .contato-info a{color:rgba(255,255,255,.9);font-weight:600;}
+
+  footer{background:var(--azul);color:rgba(255,255,255,.55);text-align:center;padding:24px;font-size:.8rem;}
+  footer strong{color:var(--ciano);}
+
+  .float-wa{position:fixed;bottom:26px;right:26px;z-index:200;width:58px;height:58px;border-radius:50%;background:var(--verde-wa);display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 6px 20px rgba(37,211,102,.5);animation:pulse 2.5s infinite;}
+  @keyframes pulse{0%,100%{box-shadow:0 6px 20px rgba(37,211,102,.5);}50%{box-shadow:0 6px 32px rgba(37,211,102,.8);}}
+
+  @media(max-width:640px){
+    .sobre-grid{grid-template-columns:1fr;}
+    .sobre-img{display:none;}
+    .hero-inner{flex-direction:column-reverse;text-align:center;}
+    .hero-text{text-align:center;}
+    .hero-btns{justify-content:center;}
+    .hero-foto img{width:160px;height:160px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.82787-19/525698918_18074345350977357_5511376288701529778_n.jpg" alt="Dr. Bernardo Casarin" crossorigin="anonymous"/>
+    <div>Dr. Bernardo <span>Casarin</span></div>
+  </div>
+  <a class="nav-cta" href="https://wa.me/55999353304?text=Olá%2C%20Dr.%20Bernardo!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank">Agendar Consulta</a>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">👁️ Oftalmologista · Santa Rosa & Santo Cristo – RS</div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Sua visão merece<br><em>cuidado especializado</em></h1>
+        <p>Diagnóstico preciso, tecnologia atual e atendimento humanizado para proteger o bem mais precioso que você tem para enxergar o mundo.</p>
+        <div class="hero-btns">
+          <a class="btn-primary" href="https://wa.me/55999353304?text=Olá%2C%20Dr.%20Bernardo!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank">💬 Agendar pelo WhatsApp</a>
+          <a class="btn-outline" href="#servicos">Ver especialidades</a>
+        </div>
+      </div>
+      <div class="hero-foto">
+        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.82787-19/525698918_18074345350977357_5511376288701529778_n.jpg" alt="Dr. Bernardo Casarin" crossorigin="anonymous"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item">🩺 CRM-RS 38337 · RQE 34894</div>
+  <div class="trust-item">🏥 Convênios e particular</div>
+  <div class="trust-item">📍 Santa Rosa & Santo Cristo – RS</div>
+  <div class="trust-item">📞 (55) 3512-3115</div>
+</div>
+
+<section class="problema">
+  <div class="container">
+    <div class="section-label">Do consultório para você</div>
+    <h2>Conteúdo real<br>sobre saúde ocular</h2>
+    <p class="subtitle">O Dr. Bernardo compartilha conhecimento para que você tome decisões conscientes sobre sua visão.</p>
+    <div class="posts-grid">
+      <div class="post-card">
+        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/504126026_2505964849755183_8680016743519976577_n.jpg" alt="Catarata" crossorigin="anonymous"/>
+        <div class="post-overlay"><h3>Sobre a Catarata</h3><p>Todo mundo terá catarata — saiba o que fazer</p></div>
+      </div>
+      <div class="post-card">
+        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/504278262_2207076656381796_9023177254825146652_n.jpg" alt="Lente intraocular" crossorigin="anonymous"/>
+        <div class="post-overlay"><h3>Lente Personalizada</h3><p>Cada paciente recebe indicação individualizada</p></div>
+      </div>
+      <div class="post-card">
+        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/504395081_1223449409336596_3711541726358646338_n.jpg" alt="Cirurgia refrativa" crossorigin="anonymous"/>
+        <div class="post-overlay"><h3>Cirurgia Refrativa</h3><p>Corrija miopia, hipermetropia e astigmatismo</p></div>
+      </div>
+      <div class="post-card">
+        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/696051844_1495352485717319_6782894026659975745_n.jpg" alt="Saúde ocular" crossorigin="anonymous"/>
+        <div class="post-overlay"><h3>Saúde Ocular</h3><p>Acompanhamento e cuidado preventivo</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="container">
+    <div class="section-label">Especialidades</div>
+    <h2>Cuidado completo<br>para os seus olhos</h2>
+    <p class="subtitle">Atendimento abrangente, do exame de rotina a procedimentos especializados.</p>
+    <div class="servicos-grid">
+      <div class="card-serv"><div class="serv-icon">🔬</div><h3>Consulta Completa</h3><p>Acuidade visual, pressão intraocular, fundo de olho e avaliação completa.</p></div>
+      <div class="card-serv"><div class="serv-icon">⚡</div><h3>Cirurgia Refrativa</h3><p>Correção de miopia, hipermetropia e astigmatismo com laser (LASIK / PRK).</p></div>
+      <div class="card-serv"><div class="serv-icon">🌫️</div><h3>Catarata</h3><p>Diagnóstico e indicação cirúrgica com lentes intraoculares de última geração.</p></div>
+      <div class="card-serv"><div class="serv-icon">🌀</div><h3>Glaucoma</h3><p>Monitoramento e tratamento personalizado para controle da pressão ocular.</p></div>
+      <div class="card-serv"><div class="serv-icon">💧</div><h3>Olho Seco</h3><p>Avaliação e tratamento com protocolos atualizados de síndrome do olho seco.</p></div>
+      <div class="card-serv"><div class="serv-icon">👶</div><h3>Oftalmologia Infantil</h3><p>Triagem e acompanhamento da visão de crianças e adolescentes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-img">
+        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/504278262_2207076656381796_9023177254825146652_n.jpg" alt="Dr. Bernardo Casarin em atendimento" crossorigin="anonymous"/>
+      </div>
+      <div>
+        <div class="section-label">Sobre o médico</div>
+        <h2>Dr. Bernardo Casarin</h2>
+        <p class="subtitle" style="color:rgba(255,255,255,.75)">Médico Oftalmologista com formação sólida e compromisso com um atendimento que vai além do diagnóstico — que cuida da pessoa.</p>
+        <ul class="credenciais">
+          <li>Médico Oftalmologista com CRM-RS ativo</li>
+          <li>Especialização em Cirurgia de Catarata e Refrativa</li>
+          <li>Atualização constante em congressos nacionais</li>
+          <li>Atendimento em Santa Rosa e Santo Cristo – RS</li>
+          <li>Convênios e pacientes particulares</li>
+        </ul>
+        <div class="crm-badges">
+          <span class="badge">CRM-RS 38337</span>
+          <span class="badge">RQE 34894</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Por que escolher</div>
+    <h2>O que diferencia<br>nossa abordagem</h2>
+    <div class="dif-grid">
+      <div class="card-dif"><div class="num">01</div><h3>Diagnóstico detalhado</h3><p>Exames completos em consulta única, sem necessidade de múltiplas visitas.</p></div>
+      <div class="card-dif"><div class="num">02</div><h3>Linguagem acessível</h3><p>Explicamos cada etapa em termos simples para que você entenda e participe.</p></div>
+      <div class="card-dif"><div class="num">03</div><h3>Agendamento fácil</h3><p>Diretamente pelo WhatsApp, sem filas. Você escolhe o melhor horário.</p></div>
+      <div class="card-dif"><div class="num">04</div><h3>Tecnologia atual</h3><p>Equipamentos modernos para exames precisos e menor tempo de recuperação.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <div class="section-label" style="color:rgba(255,255,255,.7)">Próximo passo</div>
+    <h2>Cuide da sua visão hoje</h2>
+    <p>Agende sua consulta de forma rápida e sem burocracia. Atendemos convênios e particular em Santa Rosa e Santo Cristo – RS.</p>
+    <a class="btn-wa" href="https://wa.me/55999353304?text=Olá%2C%20Dr.%20Bernardo!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank">📲 Falar no WhatsApp agora</a>
+    <div class="contato-info"><p>📞 <a href="tel:5535123115">(55) 3512-3115</a> &nbsp;|&nbsp; 📍 Santa Rosa & Santo Cristo – RS</p></div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Dr. Bernardo Casarin</strong> · CRM-RS 38337 · RQE 34894 · Oftalmologista · Santa Rosa & Santo Cristo – RS<br>
+  Informações de caráter educativo. Não substitui consulta médica presencial.</p>
+</footer>
+
+<a class="float-wa" href="https://wa.me/55999353304?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" title="WhatsApp">💬</a>
+
+</body>
+</html>
