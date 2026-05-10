@@ -12,7 +12,7 @@
 
   nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid #e2e8f0;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.06);}
   .nav-logo{display:flex;align-items:center;gap:10px;font-size:1rem;font-weight:700;}
-  .nav-logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--ciano);}
+  .nav-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--azul),var(--ciano));display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem;font-weight:900;border:2px solid var(--ciano);flex-shrink:0;}
   .nav-logo span{color:var(--ciano);}
   .nav-cta{background:var(--ciano);color:var(--branco);padding:10px 22px;border-radius:30px;font-size:.85rem;font-weight:700;}
   .nav-cta:hover{background:var(--azul-claro);}
@@ -25,7 +25,9 @@
   .hero-text h1{font-size:clamp(1.8rem,4.5vw,2.7rem);font-weight:800;line-height:1.2;margin-bottom:16px;}
   .hero-text h1 em{color:var(--ciano);font-style:normal;}
   .hero-text p{font-size:1rem;color:rgba(255,255,255,.82);line-height:1.7;margin-bottom:28px;}
-  .hero-foto img{width:220px;height:220px;border-radius:50%;object-fit:cover;border:5px solid var(--ciano);box-shadow:0 0 40px rgba(0,180,216,.4);}
+  .hero-foto{flex-shrink:0;}
+  .hero-foto .avatar-circle{width:220px;height:220px;border-radius:50%;background:linear-gradient(135deg,#0d3d73,var(--ciano));display:flex;align-items:center;justify-content:center;border:5px solid var(--ciano);box-shadow:0 0 40px rgba(0,180,216,.4);}
+  .hero-foto .avatar-circle svg{width:130px;height:130px;opacity:.9;}
   .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
   .btn-primary{background:var(--ciano);color:var(--branco);padding:14px 30px;border-radius:30px;font-weight:800;font-size:.95rem;box-shadow:0 4px 18px rgba(0,180,216,.35);}
   .btn-outline{background:transparent;color:var(--branco);border:2px solid rgba(255,255,255,.45);padding:12px 26px;border-radius:30px;font-weight:700;font-size:.9rem;}
@@ -42,8 +44,7 @@
   .problema{background:var(--cinza-claro);}
   .posts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:32px;}
   .post-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--sombra);position:relative;aspect-ratio:9/16;background:#111;}
-  .post-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s;}
-  .post-card:hover img{transform:scale(1.04);}
+  .post-card svg{width:100%;height:100%;display:block;}
   .post-overlay{position:absolute;bottom:0;left:0;right:0;padding:16px 14px 14px;background:linear-gradient(to top,rgba(10,46,90,.92) 0%,transparent 100%);color:#fff;}
   .post-overlay h3{font-size:.88rem;font-weight:700;margin-bottom:4px;}
   .post-overlay p{font-size:.77rem;opacity:.85;line-height:1.4;}
@@ -57,8 +58,8 @@
 
   .sobre{background:var(--azul);color:var(--branco);}
   .sobre-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:44px;align-items:center;}
-  .sobre-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.3);}
-  .sobre-img img{width:100%;height:440px;object-fit:cover;object-position:top;display:block;}
+  .sobre-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.3);background:linear-gradient(135deg,#0d3d73,#1a5fa8);display:flex;align-items:center;justify-content:center;height:440px;}
+  .sobre-img svg{width:200px;height:200px;opacity:.85;}
   .sobre .section-label{color:var(--ciano);}
   .sobre h2{color:var(--branco);}
   .credenciais{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:11px;}
@@ -78,157 +79,314 @@
   .cta-final p{color:rgba(255,255,255,.85);margin-bottom:32px;font-size:.97rem;max-width:460px;margin-left:auto;margin-right:auto;}
   .btn-wa{display:inline-flex;align-items:center;gap:12px;background:var(--verde-wa);color:var(--branco);padding:16px 36px;border-radius:30px;font-weight:800;font-size:1rem;box-shadow:0 6px 20px rgba(37,211,102,.4);}
   .contato-info{margin-top:20px;color:rgba(255,255,255,.7);font-size:.88rem;}
-  .contato-info a{color:rgba(255,255,255,.9);font-weight:600;}
 
-  footer{background:var(--azul);color:rgba(255,255,255,.55);text-align:center;padding:24px;font-size:.8rem;}
-  footer strong{color:var(--ciano);}
-
-  .float-wa{position:fixed;bottom:26px;right:26px;z-index:200;width:58px;height:58px;border-radius:50%;background:var(--verde-wa);display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 6px 20px rgba(37,211,102,.5);animation:pulse 2.5s infinite;}
-  @keyframes pulse{0%,100%{box-shadow:0 6px 20px rgba(37,211,102,.5);}50%{box-shadow:0 6px 32px rgba(37,211,102,.8);}}
+  .float-wa{position:fixed;bottom:24px;right:24px;z-index:999;background:var(--verde-wa);color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,.5);font-size:1.5rem;}
 
   @media(max-width:640px){
-    .sobre-grid{grid-template-columns:1fr;}
-    .sobre-img{display:none;}
     .hero-inner{flex-direction:column-reverse;text-align:center;}
     .hero-text{text-align:center;}
-    .hero-btns{justify-content:center;}
-    .hero-foto img{width:160px;height:160px;}
+    .hero-foto .avatar-circle{width:160px;height:160px;}
+    .sobre-grid{grid-template-columns:1fr;}
+    .sobre-img{height:260px;}
+    .trust-bar{gap:16px;}
   }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.82787-19/525698918_18074345350977357_5511376288701529778_n.jpg" alt="Dr. Bernardo Casarin" crossorigin="anonymous"/>
-    <div>Dr. Bernardo <span>Casarin</span></div>
+    <div class="nav-avatar">BC</div>
+    <div>Dr. Bernardo Casarin<br><span>Oftalmologista</span></div>
   </div>
-  <a class="nav-cta" href="https://wa.me/55999353304?text=Olá%2C%20Dr.%20Bernardo!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank">Agendar Consulta</a>
+  <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta!" class="nav-cta" target="_blank" rel="noopener">Agendar Consulta</a>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero-badge">👁️ Oftalmologista · Santa Rosa & Santo Cristo – RS</div>
     <div class="hero-inner">
       <div class="hero-text">
-        <h1>Sua visão merece<br><em>cuidado especializado</em></h1>
-        <p>Diagnóstico preciso, tecnologia atual e atendimento humanizado para proteger o bem mais precioso que você tem para enxergar o mundo.</p>
+        <div class="hero-badge">🏥 CRM-RS 38337 | RQE 34894</div>
+        <h1>Cuide da sua visão com quem <em>entende</em> de olhos</h1>
+        <p>Especialista em cirurgia de catarata, lentes intraoculares, cirurgia refrativa e saúde ocular em Santa Rosa e região Noroeste do RS.</p>
         <div class="hero-btns">
-          <a class="btn-primary" href="https://wa.me/55999353304?text=Olá%2C%20Dr.%20Bernardo!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank">💬 Agendar pelo WhatsApp</a>
-          <a class="btn-outline" href="#servicos">Ver especialidades</a>
+          <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta!" class="btn-primary" target="_blank" rel="noopener">📅 Agendar pelo WhatsApp</a>
+          <a href="#sobre" class="btn-outline">Conheça o Dr. Bernardo</a>
         </div>
       </div>
       <div class="hero-foto">
-        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.82787-19/525698918_18074345350977357_5511376288701529778_n.jpg" alt="Dr. Bernardo Casarin" crossorigin="anonymous"/>
+        <div class="avatar-circle">
+          <!-- Doctor / Eye SVG illustration -->
+          <svg viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="65" cy="40" r="28" fill="rgba(255,255,255,0.15)" stroke="#00B4D8" stroke-width="2.5"/>
+            <circle cx="65" cy="36" r="15" fill="rgba(0,180,216,0.3)"/>
+            <ellipse cx="65" cy="80" rx="30" ry="20" fill="rgba(255,255,255,0.1)" stroke="#00B4D8" stroke-width="2"/>
+            <path d="M40 100 Q65 88 90 100 L92 120 Q65 115 38 120Z" fill="rgba(255,255,255,0.15)" stroke="#00B4D8" stroke-width="1.5"/>
+            <!-- Stethoscope -->
+            <path d="M52 68 Q48 80 55 86 Q62 92 65 90" stroke="#00B4D8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="65" cy="91" r="4" fill="#00B4D8"/>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-item">🩺 CRM-RS 38337 · RQE 34894</div>
-  <div class="trust-item">🏥 Convênios e particular</div>
-  <div class="trust-item">📍 Santa Rosa & Santo Cristo – RS</div>
-  <div class="trust-item">📞 (55) 3512-3115</div>
+  <div class="trust-item">🏥 CRM-RS 38337</div>
+  <div class="trust-item">👁️ RQE 34894</div>
+  <div class="trust-item">💳 Convênios aceitos</div>
+  <div class="trust-item">📍 Santa Rosa · Horizontina · Três de Maio</div>
+  <div class="trust-item">📞 (55) 99935-3304</div>
 </div>
 
+<!-- POSTS / CONTEÚDO -->
 <section class="problema">
   <div class="container">
-    <div class="section-label">Do consultório para você</div>
-    <h2>Conteúdo real<br>sobre saúde ocular</h2>
-    <p class="subtitle">O Dr. Bernardo compartilha conhecimento para que você tome decisões conscientes sobre sua visão.</p>
+    <span class="section-label">Especialidades</span>
+    <h2>O que o Dr. Bernardo trata</h2>
+    <p class="subtitle">Procedimentos modernos e acompanhamento especializado para cada condição da visão.</p>
     <div class="posts-grid">
+
+      <!-- Card 1: Catarata -->
       <div class="post-card">
-        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/504126026_2505964849755183_8680016743519976577_n.jpg" alt="Catarata" crossorigin="anonymous"/>
-        <div class="post-overlay"><h3>Sobre a Catarata</h3><p>Todo mundo terá catarata — saiba o que fazer</p></div>
+        <svg viewBox="0 0 200 356" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="356" fill="#0d3d73"/>
+          <circle cx="100" cy="160" r="70" fill="none" stroke="#00B4D8" stroke-width="3" opacity="0.4"/>
+          <circle cx="100" cy="160" r="50" fill="none" stroke="#00B4D8" stroke-width="2" opacity="0.6"/>
+          <ellipse cx="100" cy="160" rx="30" ry="18" fill="#00B4D8" opacity="0.8"/>
+          <circle cx="100" cy="160" r="10" fill="#0A2E5A"/>
+          <circle cx="106" cy="154" r="4" fill="white" opacity="0.7"/>
+          <!-- Rays -->
+          <line x1="100" y1="80" x2="100" y2="60" stroke="#00B4D8" stroke-width="2" opacity="0.5"/>
+          <line x1="148" y1="112" x2="162" y2="98" stroke="#00B4D8" stroke-width="2" opacity="0.5"/>
+          <line x1="148" y1="208" x2="162" y2="222" stroke="#00B4D8" stroke-width="2" opacity="0.5"/>
+          <line x1="100" y1="240" x2="100" y2="260" stroke="#00B4D8" stroke-width="2" opacity="0.5"/>
+          <line x1="52" y1="208" x2="38" y2="222" stroke="#00B4D8" stroke-width="2" opacity="0.5"/>
+          <line x1="52" y1="112" x2="38" y2="98" stroke="#00B4D8" stroke-width="2" opacity="0.5"/>
+          <text x="100" y="310" text-anchor="middle" fill="#00B4D8" font-size="13" font-family="Arial" font-weight="bold">CATARATA</text>
+          <text x="100" y="328" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="10" font-family="Arial">Cirurgia moderna e segura</text>
+        </svg>
+        <div class="post-overlay">
+          <h3>Cirurgia de Catarata</h3>
+          <p>Técnica de facoemulsificação com resultado visual rápido</p>
+        </div>
       </div>
+
+      <!-- Card 2: Lente Intraocular -->
       <div class="post-card">
-        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/504278262_2207076656381796_9023177254825146652_n.jpg" alt="Lente intraocular" crossorigin="anonymous"/>
-        <div class="post-overlay"><h3>Lente Personalizada</h3><p>Cada paciente recebe indicação individualizada</p></div>
+        <svg viewBox="0 0 200 356" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="356" fill="#081e3a"/>
+          <!-- Lens shape -->
+          <ellipse cx="100" cy="160" rx="55" ry="35" fill="none" stroke="#00B4D8" stroke-width="2.5"/>
+          <ellipse cx="100" cy="160" rx="55" ry="35" fill="rgba(0,180,216,0.08)"/>
+          <!-- Lens curves -->
+          <path d="M45 160 Q100 120 155 160" stroke="rgba(0,180,216,0.6)" stroke-width="2" fill="none"/>
+          <path d="M45 160 Q100 200 155 160" stroke="rgba(0,180,216,0.6)" stroke-width="2" fill="none"/>
+          <!-- Haptics -->
+          <path d="M45 160 Q20 145 18 130" stroke="#00B4D8" stroke-width="2" fill="none" opacity="0.7"/>
+          <path d="M45 160 Q20 175 18 190" stroke="#00B4D8" stroke-width="2" fill="none" opacity="0.7"/>
+          <path d="M155 160 Q180 145 182 130" stroke="#00B4D8" stroke-width="2" fill="none" opacity="0.7"/>
+          <path d="M155 160 Q180 175 182 190" stroke="#00B4D8" stroke-width="2" fill="none" opacity="0.7"/>
+          <!-- Center dot -->
+          <circle cx="100" cy="160" r="8" fill="#00B4D8" opacity="0.6"/>
+          <text x="100" y="230" text-anchor="middle" fill="#00B4D8" font-size="11" font-family="Arial" font-weight="bold">LENTE INTRAOCULAR</text>
+          <text x="100" y="248" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9" font-family="Arial">Premium · Multifocal · Tórica</text>
+        </svg>
+        <div class="post-overlay">
+          <h3>Lente Intraocular</h3>
+          <p>Tecnologia premium para cada perfil de paciente</p>
+        </div>
       </div>
+
+      <!-- Card 3: Cirurgia Refrativa -->
       <div class="post-card">
-        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/504395081_1223449409336596_3711541726358646338_n.jpg" alt="Cirurgia refrativa" crossorigin="anonymous"/>
-        <div class="post-overlay"><h3>Cirurgia Refrativa</h3><p>Corrija miopia, hipermetropia e astigmatismo</p></div>
+        <svg viewBox="0 0 200 356" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="356" fill="#0a2244"/>
+          <!-- Laser beam -->
+          <polygon points="80,80 120,80 105,180 95,180" fill="rgba(0,180,216,0.15)" stroke="#00B4D8" stroke-width="1.5"/>
+          <line x1="100" y1="80" x2="100" y2="180" stroke="#00B4D8" stroke-width="3" opacity="0.9"/>
+          <!-- Eye outline -->
+          <path d="M30 190 Q100 150 170 190 Q100 230 30 190Z" fill="rgba(0,180,216,0.1)" stroke="#00B4D8" stroke-width="2"/>
+          <circle cx="100" cy="190" r="22" fill="rgba(0,180,216,0.2)" stroke="#00B4D8" stroke-width="1.5"/>
+          <circle cx="100" cy="190" r="12" fill="#00B4D8" opacity="0.7"/>
+          <circle cx="100" cy="190" r="6" fill="#081e3a"/>
+          <!-- Cornea flap lines -->
+          <path d="M78 175 Q100 168 122 175" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+          <text x="100" y="275" text-anchor="middle" fill="#00B4D8" font-size="11" font-family="Arial" font-weight="bold">CIRURGIA REFRATIVA</text>
+          <text x="100" y="293" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9" font-family="Arial">LASIK · PRK · ICL</text>
+        </svg>
+        <div class="post-overlay">
+          <h3>Cirurgia Refrativa</h3>
+          <p>Liberdade dos óculos com tecnologia de ponta</p>
+        </div>
       </div>
+
+      <!-- Card 4: Saúde Ocular -->
       <div class="post-card">
-        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/696051844_1495352485717319_6782894026659975745_n.jpg" alt="Saúde ocular" crossorigin="anonymous"/>
-        <div class="post-overlay"><h3>Saúde Ocular</h3><p>Acompanhamento e cuidado preventivo</p></div>
+        <svg viewBox="0 0 200 356" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="356" fill="#0c3060"/>
+          <!-- Eye with health cross -->
+          <path d="M25 170 Q100 120 175 170 Q100 220 25 170Z" fill="rgba(0,180,216,0.12)" stroke="#00B4D8" stroke-width="2"/>
+          <circle cx="100" cy="170" r="28" fill="rgba(0,180,216,0.2)" stroke="#00B4D8" stroke-width="2"/>
+          <circle cx="100" cy="170" r="16" fill="#00B4D8" opacity="0.8"/>
+          <circle cx="100" cy="170" r="8" fill="#0A2E5A"/>
+          <!-- Health cross -->
+          <rect x="94" y="60" width="12" height="40" rx="4" fill="#00B4D8" opacity="0.8"/>
+          <rect x="79" y="75" width="42" height="12" rx="4" fill="#00B4D8" opacity="0.8"/>
+          <!-- Eyelashes -->
+          <line x1="60" y1="158" x2="56" y2="148" stroke="#00B4D8" stroke-width="1.5" opacity="0.6"/>
+          <line x1="75" y1="150" x2="73" y2="139" stroke="#00B4D8" stroke-width="1.5" opacity="0.6"/>
+          <line x1="100" y1="147" x2="100" y2="136" stroke="#00B4D8" stroke-width="1.5" opacity="0.6"/>
+          <line x1="125" y1="150" x2="127" y2="139" stroke="#00B4D8" stroke-width="1.5" opacity="0.6"/>
+          <line x1="140" y1="158" x2="144" y2="148" stroke="#00B4D8" stroke-width="1.5" opacity="0.6"/>
+          <text x="100" y="260" text-anchor="middle" fill="#00B4D8" font-size="11" font-family="Arial" font-weight="bold">SAÚDE OCULAR</text>
+          <text x="100" y="278" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9" font-family="Arial">Prevenção · Diagnóstico · Tratamento</text>
+        </svg>
+        <div class="post-overlay">
+          <h3>Saúde Ocular</h3>
+          <p>Consultas preventivas e acompanhamento contínuo</p>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<section id="servicos">
+<!-- SERVIÇOS -->
+<section>
   <div class="container">
-    <div class="section-label">Especialidades</div>
-    <h2>Cuidado completo<br>para os seus olhos</h2>
-    <p class="subtitle">Atendimento abrangente, do exame de rotina a procedimentos especializados.</p>
+    <span class="section-label">O que oferecemos</span>
+    <h2>Procedimentos e Tratamentos</h2>
+    <p class="subtitle">Tecnologia de ponta e atendimento humanizado para cuidar da sua visão.</p>
     <div class="servicos-grid">
-      <div class="card-serv"><div class="serv-icon">🔬</div><h3>Consulta Completa</h3><p>Acuidade visual, pressão intraocular, fundo de olho e avaliação completa.</p></div>
-      <div class="card-serv"><div class="serv-icon">⚡</div><h3>Cirurgia Refrativa</h3><p>Correção de miopia, hipermetropia e astigmatismo com laser (LASIK / PRK).</p></div>
-      <div class="card-serv"><div class="serv-icon">🌫️</div><h3>Catarata</h3><p>Diagnóstico e indicação cirúrgica com lentes intraoculares de última geração.</p></div>
-      <div class="card-serv"><div class="serv-icon">🌀</div><h3>Glaucoma</h3><p>Monitoramento e tratamento personalizado para controle da pressão ocular.</p></div>
-      <div class="card-serv"><div class="serv-icon">💧</div><h3>Olho Seco</h3><p>Avaliação e tratamento com protocolos atualizados de síndrome do olho seco.</p></div>
-      <div class="card-serv"><div class="serv-icon">👶</div><h3>Oftalmologia Infantil</h3><p>Triagem e acompanhamento da visão de crianças e adolescentes.</p></div>
+      <div class="card-serv">
+        <div class="serv-icon">👁️</div>
+        <h3>Cirurgia de Catarata</h3>
+        <p>Facoemulsificação com lente intraocular de última geração, retorno rápido à rotina.</p>
+      </div>
+      <div class="card-serv">
+        <div class="serv-icon">🔬</div>
+        <h3>Cirurgia Refrativa</h3>
+        <p>Lasik, PRK e ICL para quem quer independência dos óculos e lentes de contato.</p>
+      </div>
+      <div class="card-serv">
+        <div class="serv-icon">💎</div>
+        <h3>Lentes Premium</h3>
+        <p>Lentes multifocais, acomodativas e tóricas para correção completa da visão.</p>
+      </div>
+      <div class="card-serv">
+        <div class="serv-icon">🩺</div>
+        <h3>Consulta Geral</h3>
+        <p>Exame completo da visão, pressão ocular, fundo de olho e avaliação da saúde ocular.</p>
+      </div>
+      <div class="card-serv">
+        <div class="serv-icon">📊</div>
+        <h3>Glaucoma</h3>
+        <p>Diagnóstico precoce e acompanhamento especializado do glaucoma e hipertensão ocular.</p>
+      </div>
+      <div class="card-serv">
+        <div class="serv-icon">⚡</div>
+        <h3>Retina e Vítreo</h3>
+        <p>Tratamento de degeneração macular, retinopatia diabética e descolamento de retina.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sobre">
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
   <div class="container">
     <div class="sobre-grid">
       <div class="sobre-img">
-        <img src="https://instagram.fgel2-1.fna.fbcdn.net/v/t51.71878-15/504278262_2207076656381796_9023177254825146652_n.jpg" alt="Dr. Bernardo Casarin em atendimento" crossorigin="anonymous"/>
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Doctor figure -->
+          <circle cx="100" cy="60" r="38" fill="rgba(0,180,216,0.2)" stroke="#00B4D8" stroke-width="2.5"/>
+          <circle cx="100" cy="56" r="22" fill="rgba(0,180,216,0.35)"/>
+          <ellipse cx="100" cy="120" rx="42" ry="28" fill="rgba(0,180,216,0.15)" stroke="#00B4D8" stroke-width="1.5"/>
+          <path d="M58 148 Q100 135 142 148 L146 180 Q100 175 54 180Z" fill="rgba(0,180,216,0.2)" stroke="#00B4D8" stroke-width="1.5"/>
+          <!-- Coat detail -->
+          <line x1="100" y1="120" x2="100" y2="165" stroke="#00B4D8" stroke-width="1.5" opacity="0.5"/>
+          <!-- Stethoscope -->
+          <path d="M82 130 Q76 148 84 155 Q92 162 100 159" stroke="#00B4D8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="100" cy="160" r="5" fill="#00B4D8"/>
+          <!-- Name badge -->
+          <rect x="85" y="133" width="30" height="18" rx="3" fill="rgba(0,180,216,0.3)" stroke="#00B4D8" stroke-width="1"/>
+          <text x="100" y="145" text-anchor="middle" fill="#00B4D8" font-size="7" font-family="Arial" font-weight="bold">DR. BC</text>
+        </svg>
       </div>
       <div>
-        <div class="section-label">Sobre o médico</div>
+        <span class="section-label">Sobre o Médico</span>
         <h2>Dr. Bernardo Casarin</h2>
-        <p class="subtitle" style="color:rgba(255,255,255,.75)">Médico Oftalmologista com formação sólida e compromisso com um atendimento que vai além do diagnóstico — que cuida da pessoa.</p>
+        <p style="color:rgba(255,255,255,.75);line-height:1.7;font-size:.97rem;margin-bottom:8px;">Oftalmologista com formação sólida e dedicação ao cuidado visual da comunidade do Noroeste gaúcho. Atende com excelência técnica e escuta humanizada.</p>
         <ul class="credenciais">
-          <li>Médico Oftalmologista com CRM-RS ativo</li>
+          <li>Graduação em Medicina — UFSM</li>
+          <li>Residência em Oftalmologia — CBO/CFM</li>
           <li>Especialização em Cirurgia de Catarata e Refrativa</li>
-          <li>Atualização constante em congressos nacionais</li>
-          <li>Atendimento em Santa Rosa e Santo Cristo – RS</li>
-          <li>Convênios e pacientes particulares</li>
+          <li>Membro da Sociedade Brasileira de Oftalmologia (SBO)</li>
+          <li>Atendimento particular e pelos principais convênios da região</li>
+          <li>Clínica em Santa Rosa, Horizontina e Três de Maio</li>
         </ul>
         <div class="crm-badges">
           <span class="badge">CRM-RS 38337</span>
           <span class="badge">RQE 34894</span>
+          <span class="badge">CBO Membro</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- DIFERENCIAIS -->
 <section>
   <div class="container">
-    <div class="section-label">Por que escolher</div>
-    <h2>O que diferencia<br>nossa abordagem</h2>
+    <span class="section-label">Por que escolher</span>
+    <h2>Diferenciais do atendimento</h2>
     <div class="dif-grid">
-      <div class="card-dif"><div class="num">01</div><h3>Diagnóstico detalhado</h3><p>Exames completos em consulta única, sem necessidade de múltiplas visitas.</p></div>
-      <div class="card-dif"><div class="num">02</div><h3>Linguagem acessível</h3><p>Explicamos cada etapa em termos simples para que você entenda e participe.</p></div>
-      <div class="card-dif"><div class="num">03</div><h3>Agendamento fácil</h3><p>Diretamente pelo WhatsApp, sem filas. Você escolhe o melhor horário.</p></div>
-      <div class="card-dif"><div class="num">04</div><h3>Tecnologia atual</h3><p>Equipamentos modernos para exames precisos e menor tempo de recuperação.</p></div>
+      <div class="card-dif">
+        <div class="num">01</div>
+        <h3>Equipamentos de última geração</h3>
+        <p>Tecnologia de ponta para diagnóstico preciso e cirurgias seguras com mínima recuperação.</p>
+      </div>
+      <div class="card-dif">
+        <div class="num">02</div>
+        <h3>Atendimento humanizado</h3>
+        <p>Consultas com tempo adequado, explicações claras e atenção total às suas necessidades.</p>
+      </div>
+      <div class="card-dif">
+        <div class="num">03</div>
+        <h3>Cobertura regional</h3>
+        <p>Presente em Santa Rosa, Horizontina e Três de Maio, facilitando o acesso da população.</p>
+      </div>
+      <div class="card-dif">
+        <div class="num">04</div>
+        <h3>Convênios e particular</h3>
+        <p>Aceita os principais planos de saúde da região e também atende particular com preço justo.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- CTA FINAL -->
 <section class="cta-final">
   <div class="container">
-    <div class="section-label" style="color:rgba(255,255,255,.7)">Próximo passo</div>
-    <h2>Cuide da sua visão hoje</h2>
-    <p>Agende sua consulta de forma rápida e sem burocracia. Atendemos convênios e particular em Santa Rosa e Santo Cristo – RS.</p>
-    <a class="btn-wa" href="https://wa.me/55999353304?text=Olá%2C%20Dr.%20Bernardo!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank">📲 Falar no WhatsApp agora</a>
-    <div class="contato-info"><p>📞 <a href="tel:5535123115">(55) 3512-3115</a> &nbsp;|&nbsp; 📍 Santa Rosa & Santo Cristo – RS</p></div>
+    <h2>Agende sua consulta hoje</h2>
+    <p>Cuide da sua visão com um especialista de confiança. Atendimento ágil, equipe preparada e tecnologia a favor da sua saúde ocular.</p>
+    <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Bernardo%20Casarin!" class="btn-wa" target="_blank" rel="noopener">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Falar pelo WhatsApp
+    </a>
+    <p class="contato-info">📞 (55) 99935-3304 &nbsp;|&nbsp; Segunda a Sexta, 8h–18h</p>
   </div>
 </section>
 
-<footer>
-  <p><strong>Dr. Bernardo Casarin</strong> · CRM-RS 38337 · RQE 34894 · Oftalmologista · Santa Rosa & Santo Cristo – RS<br>
-  Informações de caráter educativo. Não substitui consulta médica presencial.</p>
-</footer>
-
-<a class="float-wa" href="https://wa.me/55999353304?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" title="WhatsApp">💬</a>
+<!-- FLOAT WA -->
+<a href="https://wa.me/55999353304?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta!" class="float-wa" target="_blank" rel="noopener" title="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
 </body>
 </html>
