@@ -18,5 +18,90 @@ Error generating stack: `+e.message+`
   </head>
   <body>
     <div id="root"></div>
+  <style>
+    #gr{background:#f0f5fa;padding:72px 20px;font-family:inherit}
+    #gr .gr-wrap{max-width:1080px;margin:0 auto}
+    #gr .gr-head{text-align:center;margin-bottom:48px}
+    #gr .gr-badge{display:inline-flex;align-items:center;gap:12px;background:#fff;border:1.5px solid #d0dce8;border-radius:50px;padding:12px 28px;box-shadow:0 2px 16px rgba(10,46,90,.10);margin-bottom:20px}
+    #gr .gr-score{font-size:2.2rem;font-weight:800;color:#0a2e5a;line-height:1}
+    #gr .gr-stars{color:#f4b400;font-size:1.4rem;letter-spacing:2px;line-height:1}
+    #gr .gr-count{font-size:.88rem;color:#5a7a9a;line-height:1.3}
+    #gr .gr-g{width:22px;height:22px;flex-shrink:0}
+    #gr h2{font-size:1.8rem;font-weight:700;color:#0a2e5a;margin:0 0 8px}
+    #gr .gr-sub{color:#5a7a9a;font-size:.95rem;margin:0}
+    #gr .gr-cards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+    #gr .gr-card{background:#fff;border-radius:18px;padding:28px 24px 22px;box-shadow:0 4px 24px rgba(10,46,90,.09);flex:1 1 220px;max-width:300px;display:flex;flex-direction:column;gap:12px;position:relative}
+    #gr .gr-card-g{position:absolute;top:20px;right:20px;opacity:.13}
+    #gr .gr-cs{color:#f4b400;font-size:1rem;letter-spacing:2px}
+    #gr .gr-ct{color:#334e68;font-size:.93rem;line-height:1.65;font-style:italic;flex:1}
+    #gr .gr-ca{font-size:.82rem;font-weight:700;color:#0a2e5a}
+    #gr .gr-cta{text-align:center;margin-top:40px}
+    #gr .gr-cta a{color:#0a7cc4;font-size:.9rem;text-decoration:none;border-bottom:1px solid #b3d4f0;padding-bottom:2px}
+    @media(max-width:640px){#gr .gr-cards{flex-direction:column;align-items:center}#gr .gr-card{max-width:100%}}
+  </style>
+  <div id="gr">
+    <div class="gr-wrap">
+      <div class="gr-head">
+        <div class="gr-badge">
+          <svg class="gr-g" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          <span class="gr-score">5,0</span>
+          <span class="gr-stars">★★★★★</span>
+          <span class="gr-count">67 avaliações<br>no Google</span>
+        </div>
+        <h2>O que dizem os pacientes</h2>
+        <p class="gr-sub">Avaliações verificadas no Google</p>
+      </div>
+      <div class="gr-cards">
+        <div class="gr-card">
+          <svg class="gr-card-g gr-g" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          <div class="gr-cs">★★★★★</div>
+          <p class="gr-ct">"Médico da minha filha, sempre muito atencioso e profissional."</p>
+          <span class="gr-ca">Paciente verificada</span>
+        </div>
+        <div class="gr-card">
+          <svg class="gr-card-g gr-g" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          <div class="gr-cs">★★★★★</div>
+          <p class="gr-ct">"Meus óculos são ocupacionais e o Dr. Bernardo foi muito eficaz para a minha profissão!"</p>
+          <span class="gr-ca">Paciente verificado</span>
+        </div>
+        <div class="gr-card">
+          <svg class="gr-card-g gr-g" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          <div class="gr-cs">★★★★★</div>
+          <p class="gr-ct">"Transmite confiança em cada consulta e explica tudo com muita clareza."</p>
+          <span class="gr-ca">Paciente verificada</span>
+        </div>
+        <div class="gr-card">
+          <svg class="gr-card-g gr-g" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          <div class="gr-cs">★★★★★</div>
+          <p class="gr-ct">"Um exímio profissional, que vai além do cuidado com os olhos. Atenção, cuidado e uma verdadeira preocupação com o bem estar de cada paciente."</p>
+          <span class="gr-ca">Fabricio K.</span>
+        </div>
+      </div>
+      <div class="gr-cta">
+        <a href="https://search.google.com/local/reviews?placeid=ChIJ7XPqGHFxGZURm3jMNsEv7_M" target="_blank" rel="noreferrer">Ver todas as 67 avaliações no Google ↗</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      function placeReviews(){
+        var el=document.getElementById('gr');
+        if(!el)return;
+        var root=document.getElementById('root');
+        if(!root)return;
+        var waLinks=root.querySelectorAll('a[href*="wa.me"]');
+        if(waLinks.length){
+          var last=waLinks[waLinks.length-1];
+          var sec=last;
+          while(sec.parentElement&&sec.parentElement!==root){sec=sec.parentElement;}
+          root.insertBefore(el,sec);
+        }else{
+          root.appendChild(el);
+        }
+      }
+      if(document.readyState==='complete'){setTimeout(placeReviews,300);}
+      else{window.addEventListener('load',function(){setTimeout(placeReviews,300);});}
+    })();
+  </script>
   </body>
 </html>
