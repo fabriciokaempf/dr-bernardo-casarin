@@ -437,6 +437,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.48);padding:34px 20px;font
 </a>
 
 <script>
+if('scrollRestoration' in history){history.scrollRestoration='manual';}
+window.scrollTo(0,0);
 // FAQ
 function faq(btn){var item=btn.parentElement,open=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');});if(!open)item.classList.add('open');}
 
