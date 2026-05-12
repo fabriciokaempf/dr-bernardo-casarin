@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dr. Bernardo Casarin | Oftalmologista | Santa Rosa RS</title>
+<meta name="description" content="Dr. Bernardo Casarin, oftalmologista especialista em PRK e LASIK em Santa Rosa RS. 5,0 no Google com 67 avaliações. Agende sua consulta.">
+<meta property="og:title" content="Dr. Bernardo Casarin | Oftalmologista | Santa Rosa RS">
+<meta property="og:description" content="Especialista em PRK e LASIK em Santa Rosa RS. 5,0 no Google com 67 avaliações. Agende pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fabriciokaempf.github.io/dr-bernardo-casarin/">
+<meta name="theme-color" content="#0a2e5a">
+<link rel="canonical" href="https://fabriciokaempf.github.io/dr-bernardo-casarin/">
+<link rel="preload" as="image" href="assets/perfil.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0a2e5a;
+  --dark:#061e3c;
+  --cyan:#00b4d8;
+  --cyan-dark:#0096c7;
+  --wa:#25d366;
+  --wa-dark:#1db954;
+  --light:#f5f8fc;
+  --mid:#e3ecf5;
+  --text:#1a2e44;
+  --muted:#6b8aaa;
+  --gold:#f4b400;
+  --google-blue:#1a73e8;
+  --r:10px;
+  --r-sm:5px;
+  --r-full:50px;
+  --sh:0 1px 10px rgba(10,46,90,.07);
+  --f:'Inter',system-ui,sans-serif
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--text);background:#fff;line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.sec{padding:96px 0}
+.sec-light{background:var(--light)}
+
+/* Helpers */
+.kicker{display:block;font-size:.71rem;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:var(--cyan);margin-bottom:10px}
+.section-title{font-size:clamp(1.7rem,3vw,2.2rem);font-weight:800;color:var(--navy);line-height:1.13;margin-bottom:10px;letter-spacing:-.01em}
+.section-sub{color:var(--muted);font-size:.94rem;max-width:520px;line-height:1.65}
+.sh{margin-bottom:56px}
+.sh-c{text-align:center}
+.sh-c .section-sub{margin:0 auto}
+.stars{color:var(--gold);letter-spacing:2px}
+.wa-ico{width:17px;height:17px;fill:#fff;flex-shrink:0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:var(--r-full);font-weight:700;font-size:.91rem;cursor:pointer;border:none;transition:all .2s;font-family:var(--f);text-decoration:none}
+.btn:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.25)}
+.btn-wa:hover{background:var(--wa-dark);transform:translateY(-2px);box-shadow:0 6px 22px rgba(37,211,102,.36)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--mid)}
+.btn-outline:hover{border-color:var(--navy)}
+.btn-outline-w{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.32)}
+.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn-sm{padding:10px 20px;font-size:.82rem}
+
+/* SKIP NAV */
+.skip-nav{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-nav:focus{position:fixed;top:8px;left:8px;width:auto;height:auto;padding:10px 18px;background:var(--cyan);color:#fff;border-radius:var(--r-sm);font-weight:700;z-index:9999}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--mid)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:13px 24px;max-width:1080px;margin:0 auto}
+.nav-brand{display:flex;align-items:center;gap:12px}
+.nav-av{width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center 20%;flex-shrink:0}
+.nav-txt strong{display:block;color:var(--navy);font-size:.87rem;font-weight:700}
+.nav-txt span{color:var(--muted);font-size:.69rem;font-weight:500}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-phone{color:var(--muted);font-size:.8rem;display:none;transition:color .2s}
+.nav-phone:hover,.nav-phone:focus{color:var(--navy)}
+@media(min-width:580px){.nav-phone{display:block}}
+
+/* HERO */
+.hero{background:#fff;padding:80px 0 80px}
+.hero-in{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center;max-width:1080px;margin:0 auto;padding:0 24px}
+.hero-tag{font-size:.73rem;font-weight:600;color:var(--muted);letter-spacing:.4px;margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.2rem,4vw,3.3rem);font-weight:900;line-height:1.07;color:var(--navy);margin-bottom:20px;letter-spacing:-.025em}
+.hero h1 em{color:var(--cyan);font-style:normal}
+.hero-desc{font-size:.96rem;color:var(--muted);line-height:1.74;margin-bottom:26px;max-width:415px}
+.hero-creds{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:28px}
+.hero-cred{background:var(--light);border:1px solid var(--mid);border-radius:var(--r-sm);padding:4px 11px;font-size:.72rem;color:var(--muted);font-weight:500}
+.hero-cred strong{color:var(--navy)}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:16px}
+.hero-rating{display:flex;align-items:center;gap:6px;font-size:.79rem;color:var(--muted)}
+.hero-photo-wrap{position:relative}
+.hero-photo{width:100%;height:530px;object-fit:cover;object-position:center 20%;border-radius:16px;display:block}
+.hero-review-badge{position:absolute;bottom:24px;left:-18px;background:#fff;border:1px solid var(--mid);border-radius:var(--r);padding:12px 16px;display:flex;align-items:center;gap:11px;box-shadow:var(--sh)}
+.hero-badge-score{font-size:1.35rem;font-weight:900;color:var(--navy);line-height:1}
+.hero-badge-info{font-size:.71rem;color:var(--muted);line-height:1.45}
+.hero-badge-info strong{color:var(--navy);display:block}
+
+/* PAIN */
+.pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:1px;background:var(--mid);border:1px solid var(--mid);border-radius:var(--r);overflow:hidden}
+.pain-item{background:#fff;padding:22px 24px;display:flex;align-items:flex-start;gap:14px;transition:background .15s}
+.pain-item:hover{background:var(--light);border-left:3px solid var(--cyan)}
+.pain-ico{flex-shrink:0;margin-top:2px}
+.pain-ico svg{width:22px;height:22px;fill:none;stroke:var(--cyan);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pain-txt strong{display:block;font-size:.88rem;font-weight:700;color:var(--navy);margin-bottom:3px}
+.pain-txt span{font-size:.79rem;color:var(--muted);line-height:1.55}
+.pain-cta{text-align:center;margin-top:44px}
+.pain-cta p{color:var(--muted);font-size:.86rem;margin-bottom:16px}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--mid);border:1px solid var(--mid);border-radius:var(--r);overflow:hidden}
+.svc-card{background:#fff;padding:28px 24px;transition:background .15s}
+.svc-card:hover{background:var(--light)}
+.svc-card.featured{border:1.5px solid var(--cyan);background:rgba(0,180,216,.025)}
+/* CTA TRUST BAR */
+.cta-trust{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;gap:0;margin-bottom:36px;border:1px solid rgba(255,255,255,.12);border-radius:var(--r-sm);overflow:hidden}
+.cta-trust-item{display:flex;align-items:center;gap:7px;padding:10px 20px;border-right:1px solid rgba(255,255,255,.1);font-size:.75rem;color:rgba(255,255,255,.65);white-space:nowrap}
+.cta-trust-item:last-child{border-right:none}
+.cta-trust-item svg{flex-shrink:0;opacity:.7}
+@media(max-width:600px){.cta-trust{flex-direction:column}.cta-trust-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.1);justify-content:center}.cta-trust-item:last-child{border-bottom:none}}
+.svc-ico{width:36px;height:36px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.svc-ico svg{width:26px;height:26px;fill:none;stroke:var(--cyan);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.svc-card h3{font-size:.95rem;font-weight:800;color:var(--navy);margin-bottom:6px}
+.svc-card p{font-size:.8rem;color:var(--muted);line-height:1.62}
+.svc-tag{display:inline-block;margin-top:12px;font-size:.67rem;font-weight:700;letter-spacing:.9px;text-transform:uppercase;color:var(--cyan)}
+
+/* PROCESS */
+.proc-steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.proc-connector{display:none}
+@media(min-width:769px){
+  .proc-steps::after{content:'';position:absolute;top:21px;left:calc(12.5% + 4px);right:calc(12.5% + 4px);height:1px;background:var(--mid);z-index:0}
+}
+.proc-step{text-align:center;padding:0 16px}
+.proc-num{width:42px;height:42px;border-radius:50%;background:#fff;border:1.5px solid var(--mid);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:.83rem;font-weight:800;color:var(--cyan);position:relative;z-index:1}
+.proc-step h3{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.proc-step p{font-size:.78rem;color:var(--muted);line-height:1.58;max-width:165px;margin:0 auto}
+
+/* BIO */
+.bio-in{display:grid;grid-template-columns:1fr 1.5fr;gap:72px;align-items:center}
+.bio-photo{width:100%;max-width:370px;height:480px;object-fit:cover;object-position:center 18%;border-radius:14px;display:block}
+.bio h2{font-size:clamp(1.5rem,2.5vw,1.9rem);font-weight:800;color:var(--navy);margin-bottom:4px;letter-spacing:-.01em}
+.bio-sub{color:var(--cyan);font-weight:600;font-size:.88rem;margin-bottom:20px;display:block}
+.bio p{color:var(--muted);font-size:.94rem;line-height:1.75;margin-bottom:13px}
+.bio-crm{display:inline-flex;gap:14px;background:var(--light);border:1px solid var(--mid);border-radius:var(--r-sm);padding:7px 14px;font-size:.73rem;color:var(--muted);font-weight:500;margin-bottom:20px}
+.bio-crm strong{color:var(--navy)}
+.bio-list{display:flex;flex-direction:column;gap:9px;margin:4px 0 26px}
+.bio-li{display:flex;align-items:flex-start;gap:10px;font-size:.83rem;color:var(--text);font-weight:500;line-height:1.5}
+.bio-check{flex-shrink:0;margin-top:1px}
+.bio-check svg{width:15px;height:15px;fill:none;stroke:var(--cyan);stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+
+/* QUIZ */
+.quiz-card{max-width:600px;margin:0 auto;background:#fff;border:1px solid var(--mid);border-radius:var(--r);padding:36px 32px}
+.quiz-prog{display:flex;align-items:center;gap:10px;margin-bottom:28px}
+.quiz-prog-label{font-size:.69rem;color:var(--muted);font-weight:600;white-space:nowrap}
+.quiz-bars{display:flex;gap:5px;flex:1}
+.quiz-bar{flex:1;height:2px;background:var(--mid);border-radius:1px;transition:background .35s}
+.quiz-bar.done{background:var(--cyan)}
+.quiz-step{display:none}.quiz-step.active{display:block}
+.quiz-q{font-size:.97rem;font-weight:700;color:var(--navy);margin-bottom:18px;line-height:1.45}
+.quiz-opts{display:flex;flex-direction:column;gap:8px}
+.quiz-opt{display:flex;align-items:center;gap:10px;padding:12px 16px;border:1.5px solid var(--mid);border-radius:var(--r-sm);background:#fff;cursor:pointer;font-size:.88rem;color:var(--text);font-weight:500;text-align:left;font-family:var(--f);transition:all .17s;line-height:1.4}
+.quiz-opt:hover,.quiz-opt:focus-visible{border-color:var(--cyan);color:var(--navy);background:rgba(0,180,216,.04);outline:none}
+.quiz-result{display:none;text-align:center;padding-top:8px}
+.quiz-result.active{display:block}
+.quiz-result-score{font-size:2.6rem;margin-bottom:8px;line-height:1}
+.quiz-result h3{font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:10px;line-height:1.3}
+.quiz-result p{color:var(--muted);font-size:.88rem;line-height:1.68;margin-bottom:22px;max-width:420px;margin-left:auto;margin-right:auto}
+.quiz-reset{display:block;margin:12px auto 0;background:none;border:none;color:var(--muted);font-size:.77rem;cursor:pointer;font-family:var(--f);transition:color .2s}
+.quiz-reset:hover{color:var(--navy)}
+@media(max-width:600px){.quiz-card{padding:22px 16px}}
+
+/* REVIEWS */
+.rev-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:40px}
+.rev-score-wrap{display:flex;align-items:center;gap:12px}
+.rev-score-num{font-size:2rem;font-weight:900;color:var(--navy);line-height:1}
+.rev-score-detail{font-size:.77rem;color:var(--muted);line-height:1.5}
+.rev-score-detail strong{color:var(--navy);display:block}
+.carousel-wrap{position:relative}
+.carousel-overflow{overflow:hidden;border-radius:var(--r)}
+.carousel-track{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1);will-change:transform}
+.rev-card{flex:0 0 calc(33.333% - 14px);margin-right:21px;background:#fff;border:1px solid var(--mid);border-radius:var(--r);padding:22px 20px;position:relative}
+.rev-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.rev-avatar-wrap{display:flex;align-items:center;gap:9px}
+.rev-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;color:#fff;flex-shrink:0}
+.rev-name-wrap strong{display:block;font-size:.83rem;font-weight:700;color:var(--navy)}
+.rev-name-wrap span{font-size:.7rem;color:var(--muted)}
+.rev-stars-row{display:flex;align-items:center;gap:4px;margin-bottom:10px}
+.rev-stars-row .stars{font-size:.86rem}
+.rev-guide{color:#f29900;font-size:.72rem;font-weight:600;margin-left:2px}
+.rev-txt{color:var(--text);font-size:.85rem;line-height:1.65;font-style:italic}
+.c-btn{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;background:#fff;border:1px solid var(--mid);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;color:var(--navy);z-index:10;transition:all .2s;line-height:1}
+.c-btn:hover,.c-btn:focus-visible{background:var(--navy);color:#fff;border-color:var(--navy);outline:none}
+.c-prev{left:-16px}
+.c-next{right:-16px}
+.c-dots{display:flex;justify-content:center;gap:6px;margin-top:20px}
+.c-dot{width:6px;height:6px;border-radius:50%;background:var(--mid);cursor:pointer;transition:background .2s,transform .2s;border:none;padding:0}
+.c-dot.active{background:var(--cyan);transform:scale(1.3)}
+.c-dot:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.rev-cta{text-align:center;margin-top:24px}
+.rev-cta a{color:var(--cyan);font-size:.81rem;border-bottom:1px solid rgba(0,180,216,.3);padding-bottom:1px;transition:border-color .2s}
+.rev-cta a:hover{border-color:var(--cyan)}
+
+/* FAQ */
+.faq-list{max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:1px;background:var(--mid);border:1px solid var(--mid);border-radius:var(--r);overflow:hidden}
+.faq-item{background:#fff}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;padding:18px 22px;background:none;border:none;cursor:pointer;color:var(--navy);font-size:.9rem;font-weight:600;text-align:left;gap:12px;font-family:var(--f);transition:background .15s}
+.faq-q:hover{background:var(--light)}
+.faq-q:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px;border-radius:var(--r)}
+.faq-ico{flex-shrink:0;width:20px;height:20px;border-radius:50%;border:1.5px solid var(--mid);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:.95rem;transition:transform .2s,background .2s,border-color .2s;line-height:1}
+.faq-a{display:none;padding:0 22px 18px;color:var(--muted);font-size:.86rem;line-height:1.72}
+.faq-item.open .faq-a{display:block}
+.faq-item.open .faq-ico{transform:rotate(45deg);background:var(--cyan);border-color:var(--cyan);color:#fff}
+
+/* FINAL CTA */
+.fcta{background:var(--navy);text-align:center;padding:92px 24px;color:#fff}
+.fcta h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;margin-bottom:12px;line-height:1.1;letter-spacing:-.02em}
+.fcta h2 em{color:var(--cyan);font-style:normal}
+.fcta p{color:rgba(255,255,255,.62);font-size:.95rem;margin-bottom:32px;max-width:440px;margin-left:auto;margin-right:auto}
+.fcta-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.fcta-sub{margin-top:20px;color:rgba(255,255,255,.28);font-size:.76rem}
+.fcta-conv{font-size:.75rem;color:rgba(255,255,255,.38);margin-top:14px}
+.fcta-conv a{color:rgba(255,255,255,.52);text-decoration:underline;text-underline-offset:2px;transition:color .2s}
+.fcta-conv a:hover{color:rgba(255,255,255,.9)}
+
+/* FOOTER */
+footer{background:var(--dark);color:rgba(255,255,255,.38);padding:32px 24px;font-size:.77rem}
+.foot-in{max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+.foot-brand strong{color:#fff;display:block;margin-bottom:2px;font-size:.83rem}
+.foot-links{display:flex;flex-wrap:wrap;gap:5px 16px}
+.foot-links a{color:rgba(255,255,255,.36);transition:color .2s}
+.foot-links a:hover{color:var(--cyan)}
+
+/* FLOAT WA */
+.wa-float{position:fixed;bottom:20px;right:20px;z-index:999;width:52px;height:52px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s}
+.wa-float:focus-visible{outline:3px solid var(--wa);outline-offset:3px}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:23px;height:23px;fill:#fff}
+
+/* SCROLL FADE */
+.fade-in{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.fade-in.visible{opacity:1;transform:none}
+
+/* STATS STRIP */
+.stats-strip{border-top:1px solid var(--mid);border-bottom:1px solid var(--mid);background:#fff}
+.stats-inner{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;align-items:stretch}
+.stat-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:22px 16px;border-right:1px solid var(--mid);gap:4px}
+.stat-item:last-child{border-right:none}
+.stat-num{font-size:1.35rem;font-weight:900;color:var(--navy);line-height:1;letter-spacing:-.02em}
+.stat-lbl{font-size:.71rem;color:var(--muted);font-weight:500;text-align:center;letter-spacing:.2px}
+@media(max-width:640px){.stats-inner{flex-wrap:wrap}.stat-item{flex:1 0 50%;border-bottom:1px solid var(--mid)}.stat-item:nth-child(odd){border-right:1px solid var(--mid)}.stat-item:last-child,.stat-item:nth-last-child(2):nth-child(odd){border-bottom:none}}
+
+/* BIO QUOTE */
+.bio-quote{border-left:3px solid var(--cyan);padding:14px 18px;margin:20px 0 24px;background:var(--light);border-radius:0 var(--r-sm) var(--r-sm) 0}
+.bio-quote p{font-size:.95rem;font-weight:600;color:var(--navy);line-height:1.65;font-style:italic;margin-bottom:0}
+.bio-quote cite{display:block;margin-top:6px;font-size:.72rem;color:var(--muted);font-style:normal;font-weight:500}
+
+/* MOBILE */
+@media(max-width:768px){
+  .sec{padding:60px 0}
+  .hero{padding:52px 0 60px}
+  .hero-in{grid-template-columns:1fr;gap:36px}
+  .hero-photo-wrap{order:-1}
+  .hero-photo{height:280px}
+  .hero-review-badge{left:0;bottom:14px}
+  .bio-in{grid-template-columns:1fr;gap:40px}
+  .bio-photo{height:320px;max-width:100%}
+  .proc-steps{grid-template-columns:repeat(2,1fr);gap:20px}
+  .proc-steps::after{display:none}
+  .rev-card{flex:0 0 100%;margin-right:0}
+  .c-prev{left:-12px}
+  .c-next{right:-12px}
+}
+@media(max-width:480px){
+  .proc-steps{grid-template-columns:1fr;gap:16px}
+  .hero h1{font-size:2.1rem}
+}
+</style>
+</head>
+<body>
+
+<a class="skip-nav" href="#main-content">Ir para o conteúdo</a>
+
+<nav aria-label="Navegação principal">
+  <div class="nav-in">
+    <div class="nav-brand">
+      <img src="assets/perfil.jpg" alt="Dr. Bernardo Casarin" class="nav-av">
+      <div class="nav-txt">
+        <strong>Dr. Bernardo Casarin</strong>
+        <span>Oftalmologista &middot; CRM 38337 RS</span>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+5555999353304" aria-label="Ligar para o consultório">(55) 99935-3304</a>
+      <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+com+o+Dr.+Bernardo+Casarin" class="btn btn-wa btn-sm" target="_blank" rel="noreferrer">
+        <svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Agendar
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- HERO -->
+<section class="hero" aria-label="Apresentação">
+  <div class="hero-in">
+    <div class="hero-content">
+      <span class="hero-tag">Oftalmologista em Santa Rosa, RS</span>
+      <h1>Imagine acordar amanhã<br>e enxergar o quarto<br><em>com nitidez.</em></h1>
+      <p class="hero-desc">Muita gente passa anos dependendo de óculos ou lentes para fazer coisas simples. O Dr. Bernardo Casarin avalia sua saúde ocular de forma completa e indica o caminho mais seguro para você enxergar melhor, seja pela cirurgia refrativa ou por outros tratamentos.</p>
+      <div class="hero-creds">
+        <span class="hero-cred"><strong>CRM</strong> 38337 RS</span>
+        <span class="hero-cred"><strong>RQE</strong> 34894</span>
+        <span class="hero-cred">Cirurgia Refrativa</span>
+        <span class="hero-cred">Saúde Ocular Completa</span>
+      </div>
+      <div class="hero-actions">
+        <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Bernardo+Casarin" class="btn btn-wa" target="_blank" rel="noreferrer">
+          <svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar avaliação pelo WhatsApp
+        </a>
+        <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+verificar+se+meu+conv%C3%AAnio+%C3%A9+aceito+pelo+Dr.+Bernardo+Casarin" class="btn btn-outline" target="_blank" rel="noreferrer">
+          Verificar meu convênio
+        </a>
+      </div>
+      <div class="hero-rating">
+        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span>5,0 &middot; 67 avaliações no Google</span>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="assets/perfil.jpg" alt="Dr. Bernardo Casarin Oftalmologista" class="hero-photo" loading="eager" fetchpriority="high">
+      <div class="hero-review-badge">
+        <div>
+          <div class="stars" style="font-size:.74rem">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="hero-badge-score">5,0</div>
+        </div>
+        <div class="hero-badge-info"><strong>67 avaliações</strong>no Google</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip" role="list" aria-label="Credenciais">
+  <div class="stats-inner">
+    <div class="stat-item" role="listitem">
+      <span class="stat-num">5,0 &#9733;</span>
+      <span class="stat-lbl">67 avaliações no Google</span>
+    </div>
+    <div class="stat-item" role="listitem">
+      <span class="stat-num">PRK + LASIK</span>
+      <span class="stat-lbl">Cirurgia refrativa especializada</span>
+    </div>
+    <div class="stat-item" role="listitem">
+      <span class="stat-num">CRM 38337</span>
+      <span class="stat-lbl">RS &middot; RQE 34894</span>
+    </div>
+    <div class="stat-item" role="listitem">
+      <span class="stat-num">Convênios</span>
+      <span class="stat-lbl">Consulte seu plano</span>
+    </div>
+  </div>
+</div>
+
+<!-- PAIN POINTS -->
+<section class="sec sec-light">
+  <div class="wrap">
+    <div class="sh sh-c fade-in">
+      <span class="kicker">Você se identifica?</span>
+      <h2 class="section-title">Sinais de que seus olhos merecem atenção agora</h2>
+      <p class="section-sub">A maioria das pessoas convive com desconforto visual achando que é normal, ou que os óculos resolvem tudo. Veja se você se identifica com algum desses sinais:</p>
+    </div>
+    <div class="pain-grid fade-in">
+      <div class="pain-item">
+        <div class="pain-ico"><svg viewBox="0 0 24 24"><circle cx="7" cy="13" r="3"/><circle cx="17" cy="13" r="3"/><path d="M10 13h4M2 13V9.5A1.5 1.5 0 013.5 8H5m14 5V9.5A1.5 1.5 0 0017.5 8H19"/></svg></div>
+        <div class="pain-txt"><strong>Depende de óculos para tudo</strong><span>Tirar para dormir, colocar para ver a hora, estressar na chuva ou no mar. Você já não lembra como é viver sem eles.</span></div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="pain-txt"><strong>Visão embaçada em momentos simples</strong><span>Não consegue ler o menu no restaurante, reconhecer um rosto na rua ou enxergar com clareza dirigindo à noite.</span></div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-ico"><svg viewBox="0 0 24 24"><path d="M12 2c0 0-5 6.5-5 10a5 5 0 0010 0c0-3.5-5-10-5-10z"/><path d="M9 15.5a3 3 0 004 0"/></svg></div>
+        <div class="pain-txt"><strong>Olhos cansados antes do fim do dia</strong><span>Uma sensação de areia, ardência ou peso nos olhos que aparece no meio da tarde, especialmente depois de telas.</span></div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+        <div class="pain-txt"><strong>Luz incomoda mais do que deveria</strong><span>Farol de carro na contramão, sol do meio-dia, ambientes muito iluminados: os olhos doem antes do que deveriam.</span></div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <div class="pain-txt"><strong>Último exame foi há mais de um ano</strong><span>Glaucoma, catarata e outras condições sérias não dão aviso. São detectadas só no exame. Prevenção não tem substituição.</span></div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-ico"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div class="pain-txt"><strong>Pensa em largar os óculos, mas tem dúvidas</strong><span>Você já pesquisou cirurgia a laser, mas ainda não sabe se é indicada para o seu caso, se é segura ou como funciona na prática.</span></div>
+      </div>
+    </div>
+    <div class="pain-cta fade-in">
+      <p>Se qualquer um desses pontos soa familiar, uma consulta pode esclarecer o que está acontecendo e qual o melhor caminho.</p>
+      <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+com+o+Dr.+Bernardo+Casarin" class="btn btn-wa" target="_blank" rel="noreferrer">
+        <svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero Agendar uma Consulta
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh sh-c fade-in">
+      <span class="kicker">O que o Dr. Bernardo trata</span>
+      <h2 class="section-title">Cuidado ocular completo, do diagnóstico ao tratamento</h2>
+      <p class="section-sub">Cada olho é diferente. Cada paciente tem uma história. Os procedimentos abaixo são avaliados e indicados de forma individualizada.</p>
+    </div>
+    <div class="svc-grid fade-in">
+      <div class="svc-card featured">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>PRK</h3>
+        <p>A técnica de primeira escolha do Dr. Bernardo. Indicada para quem usa óculos ou lentes e quer reduzir ou eliminar essa dependência. Sem retalho corneano, com alta segurança.</p>
+        <span class="svc-tag">Primeira indicação</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg></div>
+        <h3>LASIK</h3>
+        <p>Cirurgia a laser com recuperação rápida. Boa opção para perfis específicos. Corrige miopia, hipermetropia e astigmatismo com precisão. Muitos pacientes já enxergam melhor no dia seguinte.</p>
+        <span class="svc-tag">Recuperação rápida</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <h3>Catarata</h3>
+        <p>Quando a visão fica turva ou com brilhos excessivos, pode ser sinal de catarata. O tratamento cirúrgico é preciso, com implante de lente de alta qualidade e retorno rápido à rotina.</p>
+        <span class="svc-tag">Cirurgia com convênio</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>Glaucoma</h3>
+        <p>Chamado de ladrão silencioso da visão: não dói e não avisa. O diagnóstico precoce é fundamental. O Dr. Bernardo monitora e trata o glaucoma para preservar o que você enxerga hoje.</p>
+        <span class="svc-tag">Diagnóstico precoce</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div>
+        <h3>Pterígio</h3>
+        <p>Uma membrana que cresce sobre a córnea e compromete a visão. A remoção cirúrgica precisa minimiza o risco de voltar e protege a superfície do olho.</p>
+        <span class="svc-tag">Cirurgia ocular</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Exames Completos</h3>
+        <p>Mapeamento de retina, tomografia de córnea, biometria e muito mais. O exame anual é o único jeito de saber com certeza como estão os seus olhos, por dentro e por fora.</p>
+        <span class="svc-tag">Prevenção e diagnóstico</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec sec-light">
+  <div class="wrap">
+    <div class="sh sh-c fade-in">
+      <span class="kicker">Como funciona</span>
+      <h2 class="section-title">Quatro passos. Sem mistério, sem pressa.</h2>
+      <p class="section-sub">Da primeira mensagem até o acompanhamento, você sabe exatamente o que vai acontecer.</p>
+    </div>
+    <div class="proc-steps fade-in">
+      <div class="proc-step">
+        <div class="proc-num">1</div>
+        <h3>Você agenda pelo WhatsApp</h3>
+        <p>Sem formulário complicado, sem fila. Manda uma mensagem e nossa equipe confirma o horário.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">2</div>
+        <h3>Consulta completa, com calma</h3>
+        <p>O Dr. Bernardo examina seus olhos com equipamentos modernos. Pode e deve perguntar tudo.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">3</div>
+        <h3>Diagnóstico honesto, plano claro</h3>
+        <p>Você sai sabendo exatamente qual é a situação dos seus olhos e quais opções existem para o seu caso.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">4</div>
+        <h3>Tratamento com acompanhamento</h3>
+        <p>Seja uma cirurgia, uma prescrição ou exame de rotina: o Dr. Bernardo acompanha todo o processo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIO -->
+<section class="sec">
+  <div class="wrap">
+    <div class="bio-in fade-in">
+      <div>
+        <img src="assets/perfil.jpg" alt="Dr. Bernardo Casarin" class="bio-photo">
+      </div>
+      <div>
+        <span class="kicker">Conheça o especialista</span>
+        <h2 style="font-size:clamp(1.5rem,2.5vw,1.9rem);font-weight:800;color:var(--navy);margin-bottom:4px;letter-spacing:-.01em">Dr. Bernardo Casarin</h2>
+        <span style="display:block;color:var(--cyan);font-weight:600;font-size:.88rem;margin-bottom:16px">Oftalmologista em Santa Rosa, RS</span>
+        <div style="display:inline-flex;gap:14px;background:var(--light);border:1px solid var(--mid);border-radius:var(--r-sm);padding:7px 14px;font-size:.73rem;color:var(--muted);font-weight:500;margin-bottom:20px">
+          <span><strong style="color:var(--navy)">CRM</strong> 38337 RS</span>
+          <span><strong style="color:var(--navy)">RQE</strong> 34894</span>
+        </div>
+        <p style="color:var(--muted);font-size:.94rem;line-height:1.75;margin-bottom:13px">Escolhi oftalmologia porque acredito que a visão é uma das coisas mais fundamentais na vida de uma pessoa, e que um bom diagnóstico pode mudar muito mais do que a nitidez do que ela enxerga.</p>
+        <div class="bio-quote">
+          <p>"Minha abordagem é simples: entender o paciente, explicar com clareza o que está acontecendo e indicar o tratamento que eu indicaria para alguém da minha família."</p>
+          <cite>Dr. Bernardo Casarin, CRM 38337 RS</cite>
+        </div>
+        <p style="color:var(--muted);font-size:.94rem;line-height:1.75;margin-bottom:20px">Atendo em Santa Rosa porque acredito que uma cidade como a nossa merece acesso a oftalmologia de alta qualidade, sem precisar viajar para uma consulta que pode ser feita aqui, com atenção individual.</p>
+        <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:28px">
+          <div style="display:flex;align-items:flex-start;gap:10px;font-size:.83rem;color:var(--text);font-weight:500;line-height:1.5">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Especialidade em Cirurgia Refrativa: PRK (1ª escolha) e LASIK</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;font-size:.83rem;color:var(--text);font-weight:500;line-height:1.5">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Tratamento de Catarata, Glaucoma e Pterígio</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;font-size:.83rem;color:var(--text);font-weight:500;line-height:1.5">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Exames completos com equipamentos de referência</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;font-size:.83rem;color:var(--text);font-weight:500;line-height:1.5">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Atendimento humanizado, com tempo para ouvir cada paciente</span>
+          </div>
+        </div>
+        <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+com+o+Dr.+Bernardo+Casarin" class="btn btn-wa" target="_blank" rel="noreferrer">
+          <svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar com Dr. Bernardo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="sec sec-light" id="quiz" aria-label="Quiz de candidatura">
+  <div class="wrap">
+    <div class="sh sh-c fade-in">
+      <span class="kicker">Teste rápido</span>
+      <h2 class="section-title">Descubra se a cirurgia a laser pode ser uma opção para você</h2>
+      <p class="section-sub">3 perguntas. 1 minuto. Uma ideia de por onde começar.</p>
+    </div>
+    <div class="quiz-card fade-in">
+      <div class="quiz-prog">
+        <span class="quiz-prog-label" id="qCount">Pergunta 1 de 3</span>
+        <div class="quiz-bars">
+          <div class="quiz-bar done" id="qb0"></div>
+          <div class="quiz-bar" id="qb1"></div>
+          <div class="quiz-bar" id="qb2"></div>
+        </div>
+      </div>
+      <div class="quiz-step active" id="qs0">
+        <p class="quiz-q">Sua receita de óculos ou lentes mudou nos últimos 12 meses?</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" onclick="qNext(0,3)">Não, está estável há mais de 1 ano</button>
+          <button class="quiz-opt" onclick="qNext(0,2)">Acho que sim, mas não tenho certeza</button>
+          <button class="quiz-opt" onclick="qNext(0,1)">Sim, mudou recentemente</button>
+          <button class="quiz-opt" onclick="qNext(0,1)">Tenho menos de 18 anos</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="qs1">
+        <p class="quiz-q">Qual é sua faixa de grau de correção visual?</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" onclick="qNext(1,3)">Até &minus;6 graus (miopia leve a moderada)</button>
+          <button class="quiz-opt" onclick="qNext(1,2)">Entre &minus;6 e &minus;10 graus (miopia alta)</button>
+          <button class="quiz-opt" onclick="qNext(1,1)">Acima de &minus;10 graus (miopia muito alta)</button>
+          <button class="quiz-opt" onclick="qNext(1,3)">Tenho hipermetropia ou astigmatismo</button>
+          <button class="quiz-opt" onclick="qNext(1,2)">Não sei exatamente</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="qs2">
+        <p class="quiz-q">Qual é a sua faixa de idade?</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" onclick="qNext(2,3)">18 a 30 anos</button>
+          <button class="quiz-opt" onclick="qNext(2,3)">31 a 45 anos</button>
+          <button class="quiz-opt" onclick="qNext(2,2)">Acima de 45 anos</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="qResult">
+        <div class="quiz-result-score" id="qIcon" aria-hidden="true"></div>
+        <h3 id="qTitle"></h3>
+        <p id="qText"></p>
+        <a id="qCta" href="https://wa.me/55999353304?text=Ol%C3%A1%2C+fiz+o+quiz+do+site+e+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Bernardo+Casarin" class="btn btn-wa" target="_blank" rel="noreferrer">
+          <svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar minha avaliação
+        </a>
+        <button class="quiz-reset" onclick="qReset()">Refazer o quiz</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" aria-label="Avaliações de pacientes">
+  <div class="wrap">
+    <div class="rev-header fade-in">
+      <div>
+        <span class="kicker">O que nossos pacientes dizem</span>
+        <h2 class="section-title" style="margin-bottom:0">Avaliações no Google</h2>
+      </div>
+      <div class="rev-score-wrap">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        <div class="rev-score-num">5,0</div>
+        <div>
+          <span class="stars" aria-hidden="true" style="font-size:.85rem">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <div class="rev-score-detail"><strong>67 avaliações</strong>no Google</div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-wrap fade-in">
+      <button class="c-btn c-prev" onclick="cSlide(-1)" aria-label="Avaliação anterior">&#8249;</button>
+      <div class="carousel-overflow">
+        <div class="carousel-track" id="cTrack" aria-live="polite" aria-atomic="false">
+          <div class="rev-card">
+            <div class="rev-card-head">
+              <div class="rev-avatar-wrap">
+                <div class="rev-avatar" style="background:#c62828">L</div>
+                <div class="rev-name-wrap"><strong>Lorenzo Fernandez</strong><span>Guia Local &middot; 20 aval. &middot; 2 anos atrás</span></div>
+              </div>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="rev-stars-row"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rev-guide">&#11088; Guia Local</span></div>
+            <p class="rev-txt">"Excelente oftalmologista! Dr. Bernardo é muito atencioso e profissional, altamente recomendado para quem busca qualidade em cuidados com a visão."</p>
+          </div>
+          <div class="rev-card">
+            <div class="rev-card-head">
+              <div class="rev-avatar-wrap">
+                <div class="rev-avatar" style="background:#f57f17">A</div>
+                <div class="rev-name-wrap"><strong>Alessandro Rafael da Silva</strong><span>1 avaliação &middot; 2 anos atrás</span></div>
+              </div>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="rev-stars-row"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <p class="rev-txt">"Bernardo tem grande experiência na sua área, excelente profissional, super atencioso, atende também crianças com todo o cuidado, paciência e atenção. Altamente recomendado!"</p>
+          </div>
+          <div class="rev-card">
+            <div class="rev-card-head">
+              <div class="rev-avatar-wrap">
+                <div class="rev-avatar" style="background:#00897b">F</div>
+                <div class="rev-name-wrap"><strong>Fatima Casarin</strong><span>1 avaliação &middot; 2 anos atrás</span></div>
+              </div>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="rev-stars-row"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <p class="rev-txt">"O atendimento da secretária é excelente. O atendimento do Dr. Bernardo é maravilhoso, ele é muito atencioso, explica e tira as dúvidas do paciente. É um médico muito humano e querido."</p>
+          </div>
+          <div class="rev-card">
+            <div class="rev-card-head">
+              <div class="rev-avatar-wrap">
+                <div class="rev-avatar" style="background:#1565c0">L</div>
+                <div class="rev-name-wrap"><strong>Lucas Martini</strong><span>Guia Local &middot; 9 aval. &middot; 2 anos atrás</span></div>
+              </div>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="rev-stars-row"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rev-guide">&#11088; Guia Local</span></div>
+            <p class="rev-txt">"Excelente profissional, ótimo atendimento e clínica impecável. Recomendo!"</p>
+          </div>
+          <div class="rev-card">
+            <div class="rev-card-head">
+              <div class="rev-avatar-wrap">
+                <div class="rev-avatar" style="background:#4a148c">S</div>
+                <div class="rev-name-wrap"><strong>Simone Banderó</strong><span>11 avaliações &middot; 2 anos atrás</span></div>
+              </div>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="rev-stars-row"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <p class="rev-txt">"Atencioso, explica muito bem tudo! Meus óculos são ocupacionais e muito eficazes para minha profissão! Recomendo."</p>
+          </div>
+          <div class="rev-card">
+            <div class="rev-card-head">
+              <div class="rev-avatar-wrap">
+                <div class="rev-avatar" style="background:#006064">T</div>
+                <div class="rev-name-wrap"><strong>Thanise Casarin</strong><span>2 avaliações &middot; 2 dias atrás</span></div>
+              </div>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </div>
+            <div class="rev-stars-row"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rev-guide" style="color:var(--google-blue)">Recente</span></div>
+            <p class="rev-txt">"Experiência única, o Dr. Bernardo é muito atencioso e excelente profissional, eu super recomendo."</p>
+          </div>
+        </div>
+      </div>
+      <button class="c-btn c-next" onclick="cSlide(1)" aria-label="Próxima avaliação">&#8250;</button>
+    </div>
+    <div class="c-dots" id="cDots"></div>
+    <div class="rev-cta">
+      <a href="https://www.google.com/search?q=bernardo+casarin+oftalmologista+santa+rosa" target="_blank" rel="noreferrer">Ver todas as 67 avaliações no Google &#8599;</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-light">
+  <div class="wrap">
+    <div class="sh sh-c fade-in">
+      <span class="kicker">Dúvidas frequentes</span>
+      <h2 class="section-title">Perguntas que os pacientes fazem antes de agendar</h2>
+    </div>
+    <div class="faq-list fade-in">
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">PRK ou LASIK: qual o mais indicado para mim?<span class="faq-ico" aria-hidden="true">+</span></button><div class="faq-a" role="region">O Dr. Bernardo tem o PRK como primeira escolha para a maioria dos casos. O PRK não cria retalho na córnea, o que é uma vantagem real para quem pratica esportes de contato, tem córnea mais fina ou quer uma técnica com histórico mais consolidado. O LASIK tem recuperação visual mais rápida, geralmente em 24 a 48 horas, e pode ser a indicação certa dependendo do perfil da sua córnea. A indicação só é definida depois do exame completo.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Tenho medo de cirurgia nos olhos. É normal? Como funciona?<span class="faq-ico" aria-hidden="true">+</span></button><div class="faq-a" role="region">Totalmente normal. A grande maioria dos pacientes relata que a cirurgia foi bem diferente do que imaginavam: rápida, indolor e com a sensação de estar no controle. O procedimento dura poucos minutos e é feito com colírio anestésico. Você fica acordado, mas não sente dor. O Dr. Bernardo explica cada etapa antes de começar para que você saiba exatamente o que vai acontecer.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Quanto tempo leva para a visão melhorar depois do PRK?<span class="faq-ico" aria-hidden="true">+</span></button><div class="faq-a" role="region">No PRK, a visão melhora gradualmente em 3 a 7 dias, com estabilização completa em 1 a 3 meses. Nos primeiros dias é normal algum desconforto e visão flutuante. No LASIK, a melhora é bem mais rápida, geralmente já no dia seguinte. Em ambos os casos, o acompanhamento pós-operatório com o Dr. Bernardo é parte fundamental do processo.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Como sei se tenho catarata ou glaucoma?<span class="faq-ico" aria-hidden="true">+</span></button><div class="faq-a" role="region">Geralmente você não sabe, e esse é exatamente o problema. A catarata começa com uma névoa leve que parece ser cansaço. O glaucoma pode não dar nenhum sintoma até que parte da visão já esteja comprometida. Por isso o exame anual é insubstituível. Quanto mais cedo o diagnóstico, mais simples o tratamento e menor o impacto na qualidade de vida.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Meu convênio cobre a cirurgia?<span class="faq-ico" aria-hidden="true">+</span></button><div class="faq-a" role="region">Muitos convênios cobrem procedimentos como PRK, LASIK e cirurgia de catarata, mas a cobertura varia bastante de plano para plano. A forma mais rápida de descobrir é mandar uma mensagem pelo WhatsApp com o nome do seu convênio. Nossa equipe verifica e responde em minutos.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)" aria-expanded="false">Qual é a faixa de idade ideal para a cirurgia a laser?<span class="faq-ico" aria-hidden="true">+</span></button><div class="faq-a" role="region">A cirurgia refrativa é indicada a partir dos 18 anos, quando a visão costuma estar estável. O ideal é que o grau não tenha mudado nos últimos 12 meses. Acima dos 45 anos, é preciso avaliar com mais cuidado a presença de presbiopia (vista cansada), que pode influenciar a indicação. Não há uma idade máxima, desde que a saúde ocular geral esteja em condições adequadas.</div></div>
+    </div>
+    <p style="text-align:center;margin-top:22px;font-size:.82rem;color:var(--muted)">Ainda com dúvida? <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+tenho+uma+d%C3%BAvida+antes+de+agendar+com+o+Dr.+Bernardo+Casarin" target="_blank" rel="noreferrer" style="color:var(--cyan);border-bottom:1px solid rgba(0,180,216,.3)">Prefiro perguntar direto pelo WhatsApp.</a></p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="fcta">
+  <div class="wrap">
+    <div class="cta-trust">
+      <div class="cta-trust-item">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        5,0 no Google &middot; 67 avaliações
+      </div>
+      <div class="cta-trust-item">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        CRM 38337 RS &middot; RQE 34894
+      </div>
+      <div class="cta-trust-item">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        Aceita convênios
+      </div>
+    </div>
+    <h2>Seus olhos merecem uma <em>avaliação honesta.</em><br>Só a consulta pode dizer o que é certo para você.</h2>
+    <p>O Dr. Bernardo atende pacientes de Santa Rosa e região. A consulta é o ponto de partida para entender o que está acontecendo com os seus olhos e quais opções existem para você.</p>
+    <div class="fcta-actions">
+      <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+agendar+minha+avalia%C3%A7%C3%A3o+com+o+Dr.+Bernardo+Casarin" class="btn btn-wa" target="_blank" rel="noreferrer">
+        <svg class="wa-ico" style="width:20px;height:20px" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Agendar minha avaliação pelo WhatsApp
+      </a>
+      <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+verificar+se+meu+conv%C3%AAnio+%C3%A9+aceito+pelo+Dr.+Bernardo+Casarin" class="btn btn-outline-w" target="_blank" rel="noreferrer">Verificar se meu convênio é aceito</a>
+    </div>
+    <p class="fcta-sub">Santa Rosa, RS &middot; R. Cel. Borges Fortes, 661, Centro &middot; Atende convênios</p>
+    <p class="fcta-conv">Dúvida antes de agendar? <a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+tenho+uma+d%C3%BAvida+antes+de+agendar" target="_blank" rel="noreferrer">Manda uma mensagem: a gente responde rápido.</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-brand"><strong>Dr. Bernardo Casarin</strong>Oftalmologista &middot; CRM 38337 RS &middot; RQE 34894</div>
+    <div class="foot-links">
+      <a href="https://wa.me/55999353304" target="_blank" rel="noreferrer">(55) 99935-3304</a>
+      <span>Santa Rosa, RS</span>
+      <a href="https://www.instagram.com/bernardocasarin.oftalmo/" target="_blank" rel="noreferrer">@bernardocasarin.oftalmo</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+com+o+Dr.+Bernardo+Casarin" class="wa-float" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+if('scrollRestoration' in history){history.scrollRestoration='manual';}
+window.scrollTo(0,0);
+
+// FAQ
+function faq(btn){var item=btn.parentElement,open=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.faq-q').setAttribute('aria-expanded','false');});if(!open){item.classList.add('open');btn.setAttribute('aria-expanded','true');}}
+
+// QUIZ
+(function(){
+  var scores=[0,0,0];
+  var labels=['Pergunta 1 de 3','Pergunta 2 de 3','Pergunta 3 de 3'];
+  window.qNext=function(q,score){
+    scores[q]=score;
+    document.getElementById('qs'+q).classList.remove('active');
+    document.getElementById('qb'+q).classList.add('done');
+    var next=q+1;
+    if(next<3){
+      document.getElementById('qs'+next).classList.add('active');
+      document.getElementById('qb'+next).classList.add('done');
+      document.getElementById('qCount').textContent=labels[next];
+    } else {
+      document.getElementById('qCount').textContent='Resultado';
+      showResult();
+    }
+  };
+  function showResult(){
+    var total=scores[0]+scores[1]+scores[2];
+    var res=document.getElementById('qResult');
+    res.classList.add('active');
+    if(total>=8){
+      document.getElementById('qIcon').textContent='✓';
+      document.getElementById('qIcon').style.color='var(--wa)';
+      document.getElementById('qTitle').textContent='Seu perfil é promissor para a cirurgia refrativa';
+      document.getElementById('qText').textContent='Suas respostas indicam que uma avaliação presencial faz todo sentido. O Dr. Bernardo vai examinar sua córnea, seu histórico e sua rotina para confirmar se o PRK ou LASIK é indicado para você.';
+    } else if(total>=5){
+      document.getElementById('qIcon').textContent='◎';
+      document.getElementById('qIcon').style.color='var(--cyan)';
+      document.getElementById('qTitle').textContent='Pode valer a pena avaliar com o Dr. Bernardo';
+      document.getElementById('qText').textContent='Algumas respostas indicam pontos que merecem avaliação individual. Só o exame completo pode confirmar se há ou não indicação cirúrgica no seu caso.';
+    } else {
+      document.getElementById('qIcon').textContent='○';
+      document.getElementById('qIcon').style.color='var(--muted)';
+      document.getElementById('qTitle').textContent='A cirurgia pode não ser a melhor opção agora, mas existem caminhos';
+      document.getElementById('qText').textContent='Com base nas suas respostas, há fatores que merecem atenção antes de pensar em cirurgia. O Dr. Bernardo pode avaliar seu caso e indicar o tratamento mais adequado para você hoje.';
+    }
+  }
+  window.qReset=function(){
+    scores=[0,0,0];
+    document.querySelectorAll('.quiz-step').forEach(function(el){el.classList.remove('active');});
+    document.getElementById('qs0').classList.add('active');
+    document.getElementById('qResult').classList.remove('active');
+    document.getElementById('qb1').classList.remove('done');
+    document.getElementById('qb2').classList.remove('done');
+    document.getElementById('qCount').textContent=labels[0];
+  };
+})();
+
+// SCROLL FADE-IN
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+  },{threshold:0.07});
+  document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el);});
+})();
+
+// CAROUSEL
+(function(){
+  var track=document.getElementById('cTrack');
+  var cards=track.querySelectorAll('.rev-card');
+  var total=cards.length;
+  var cur=0;
+  var vis=window.innerWidth>768?3:1;
+  var max=total-vis;
+  var auto;
+
+  var dotsEl=document.getElementById('cDots');
+  dotsEl.setAttribute('role','tablist');
+  dotsEl.setAttribute('aria-label','Navegar entre avaliações');
+  for(var i=0;i<=max;i++){
+    var d=document.createElement('button');
+    d.className='c-dot'+(i===0?' active':'');
+    d.setAttribute('data-i',i);
+    d.setAttribute('aria-label','Avaliação '+(i+1));
+    d.setAttribute('aria-selected',i===0?'true':'false');
+    d.setAttribute('role','tab');
+    d.onclick=function(){goTo(+this.getAttribute('data-i'));};
+    dotsEl.appendChild(d);
+  }
+
+  function goTo(n){
+    cur=Math.max(0,Math.min(n,max));
+    var cardW=cards[0].offsetWidth+21;
+    track.style.transform='translateX(-'+cur*cardW+'px)';
+    dotsEl.querySelectorAll('.c-dot').forEach(function(dot,idx){
+      dot.classList.toggle('active',idx===cur);
+      dot.setAttribute('aria-selected',idx===cur?'true':'false');
+    });
+    clearInterval(auto);
+    auto=setInterval(function(){goTo(cur>=max?0:cur+1);},5000);
+  }
+
+  window.cSlide=function(dir){goTo(cur+dir);};
+  auto=setInterval(function(){goTo(cur>=max?0:cur+1);},5000);
+
+  window.addEventListener('resize',function(){
+    vis=window.innerWidth>768?3:1;
+    max=total-vis;
+    goTo(Math.min(cur,max));
+  });
+})();
+</script>
+
+</body>
+</html>
