@@ -68,7 +68,8 @@
     .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px}
     .pain-item{display:flex;align-items:flex-start;gap:14px;background:#fff;border:1px solid var(--mid);border-radius:var(--r);padding:20px;box-shadow:var(--sh);transition:transform .2s}
     .pain-item:hover{transform:translateY(-3px)}
-    .pain-ico{width:42px;height:42px;background:linear-gradient(135deg,rgba(0,180,216,.15),rgba(0,180,216,.04));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+    .pain-ico{flex-shrink:0;margin-top:2px}
+    .pain-ico svg{width:22px;height:22px;fill:none;stroke:var(--cyan);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
     .pain-txt strong{display:block;font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:4px}
     .pain-txt span{font-size:.82rem;color:var(--muted);line-height:1.55}
     .pain-cta{text-align:center;margin-top:44px}
@@ -76,7 +77,8 @@
     .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
     .svc-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:var(--r);padding:26px 22px;transition:all .22s}
     .svc-card:hover{background:rgba(255,255,255,.12);transform:translateY(-4px)}
-    .svc-ico{width:50px;height:50px;background:linear-gradient(135deg,var(--cyan),#0096c7);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px}
+    .svc-ico{width:36px;height:36px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+    .svc-ico svg{width:26px;height:26px;fill:none;stroke:var(--cyan);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
     .svc-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:7px}
     .svc-card p{font-size:.83rem;color:rgba(255,255,255,.62);line-height:1.6}
     .svc-tag{display:inline-block;margin-top:12px;background:rgba(0,180,216,.22);color:var(--cyan);border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700}
@@ -188,12 +190,12 @@
   <div class="wrap">
     <div class="sh"><span class="badge">Você se identifica?</span><h2>Sinais de que seus olhos precisam de atenção</h2><p>A maioria das pessoas convive com problemas oculares achando que é normal. Veja se você passa por algum desses:</p></div>
     <div class="pain-grid">
-      <div class="pain-item"><div class="pain-ico">&#128083;</div><div class="pain-txt"><strong>Dependência de óculos ou lentes</strong><span>Não consegue fazer nada sem eles, o que limita sua rotina e qualidade de vida.</span></div></div>
-      <div class="pain-item"><div class="pain-ico">&#128065;</div><div class="pain-txt"><strong>Visão embaçada ou distorcida</strong><span>Dificuldade para ler, dirigir à noite ou enxergar rostos com nitidez.</span></div></div>
-      <div class="pain-item"><div class="pain-ico">&#128532;</div><div class="pain-txt"><strong>Olhos cansados e irritados</strong><span>Coceira, ardência ou sensação de areia nos olhos no fim do dia.</span></div></div>
-      <div class="pain-item"><div class="pain-ico">&#128161;</div><div class="pain-txt"><strong>Sensibilidade à luz</strong><span>Desconforto em ambientes claros ou ao dirigir com faróis à noite.</span></div></div>
-      <div class="pain-item"><div class="pain-ico">&#128197;</div><div class="pain-txt"><strong>Sem exame há mais de 1 ano</strong><span>Muitas doenças oculares são silenciosas e só detectadas no exame preventivo.</span></div></div>
-      <div class="pain-item"><div class="pain-ico">&#127919;</div><div class="pain-txt"><strong>Quer largar os óculos de vez</strong><span>Já pensou em cirurgia a laser mas tem dúvidas sobre segurança e indicação.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><circle cx="7" cy="13" r="3"/><circle cx="17" cy="13" r="3"/><path d="M10 13h4M2 13V9.5A1.5 1.5 0 013.5 8H5m14 5V9.5A1.5 1.5 0 0017.5 8H19"/></svg></div><div class="pain-txt"><strong>Dependência de óculos ou lentes</strong><span>Não consegue fazer nada sem eles, o que limita sua rotina e qualidade de vida.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div><div class="pain-txt"><strong>Visão embaçada ou distorcida</strong><span>Dificuldade para ler, dirigir à noite ou enxergar rostos com nitidez.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><path d="M12 2c0 0-5 6.5-5 10a5 5 0 0010 0c0-3.5-5-10-5-10z"/></svg></div><div class="pain-txt"><strong>Olhos cansados e irritados</strong><span>Coceira, ardência ou sensação de areia nos olhos no fim do dia.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div><div class="pain-txt"><strong>Sensibilidade à luz</strong><span>Desconforto em ambientes claros ou ao dirigir com faróis à noite.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div class="pain-txt"><strong>Sem exame há mais de 1 ano</strong><span>Muitas doenças oculares são silenciosas e só detectadas no exame preventivo.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="pain-txt"><strong>Quer largar os óculos de vez</strong><span>Já pensou em cirurgia a laser mas tem dúvidas sobre segurança e indicação.</span></div></div>
     </div>
     <div class="pain-cta"><p>Se você se identificou com qualquer um desses sinais, uma consulta pode mudar tudo.</p><a href="https://wa.me/55999353304?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+com+o+Dr.+Bernardo+Casarin" class="btn btn-wa" target="_blank" rel="noreferrer"><svg class="wi" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Quero Agendar uma Consulta</a></div>
   </div>
@@ -203,12 +205,12 @@
   <div class="wrap">
     <div class="sh sh-w"><span class="badge badge-w">Procedimentos</span><h2>Tratamentos especializados</h2><p>Tecnologia de ponta para o cuidado completo da sua saúde ocular</p></div>
     <div class="svc-grid">
-      <div class="svc-card"><div class="svc-ico">&#9889;</div><h3>PRK</h3><p>Técnica de primeira escolha para cirurgia refrativa a laser. Segura, precisa e sem retalho corneano.</p><span class="svc-tag">Principal indicação</span></div>
-      <div class="svc-card"><div class="svc-ico">&#127919;</div><h3>LASIK</h3><p>Cirurgia a laser com recuperação rápida para correção de miopia, hipermetropia e astigmatismo.</p><span class="svc-tag">Cirurgia refrativa</span></div>
-      <div class="svc-card"><div class="svc-ico">&#128300;</div><h3>Catarata</h3><p>Diagnóstico precoce e tratamento cirúrgico moderno com implante de lentes de última geração.</p><span class="svc-tag">Alta precisão</span></div>
-      <div class="svc-card"><div class="svc-ico">&#128737;</div><h3>Glaucoma</h3><p>Diagnóstico, monitoramento e tratamento para preservar sua visão a longo prazo.</p><span class="svc-tag">Prevenção</span></div>
-      <div class="svc-card"><div class="svc-ico">&#127754;</div><h3>Pterígio</h3><p>Remoção cirúrgica precisa com técnicas que minimizam recidiva e preservam a superfície ocular.</p><span class="svc-tag">Cirurgia ocular</span></div>
-      <div class="svc-card"><div class="svc-ico">&#128301;</div><h3>Exames Completos</h3><p>Mapeamento de retina, tomografia de córnea, OCT e avaliação completa da saúde ocular.</p><span class="svc-tag">Diagnóstico</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>PRK</h3><p>Técnica de primeira escolha para cirurgia refrativa a laser. Segura, precisa e sem retalho corneano.</p><span class="svc-tag">Principal indicação</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg></div><h3>LASIK</h3><p>Cirurgia a laser com recuperação rápida para correção de miopia, hipermetropia e astigmatismo.</p><span class="svc-tag">Cirurgia refrativa</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Catarata</h3><p>Diagnóstico precoce e tratamento cirúrgico moderno com implante de lentes de última geração.</p><span class="svc-tag">Alta precisão</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Glaucoma</h3><p>Diagnóstico, monitoramento e tratamento para preservar sua visão a longo prazo.</p><span class="svc-tag">Prevenção</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div><h3>Pterígio</h3><p>Remoção cirúrgica precisa com técnicas que minimizam recidiva e preservam a superfície ocular.</p><span class="svc-tag">Cirurgia ocular</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Exames Completos</h3><p>Mapeamento de retina, tomografia de córnea, OCT e avaliação completa da saúde ocular.</p><span class="svc-tag">Diagnóstico</span></div>
     </div>
   </div>
 </section>
