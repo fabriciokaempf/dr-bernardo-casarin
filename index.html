@@ -90,11 +90,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .svc-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:7px}
     .svc-card p{font-size:.83rem;color:rgba(255,255,255,.62);line-height:1.6}
     .svc-tag{display:inline-block;margin-top:12px;background:rgba(0,180,216,.22);color:var(--cyan);border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700}
-    .proc-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
-    .proc-step{text-align:center;padding:20px 16px}
-    .proc-num{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,var(--navy),#0d3a6e);border:3px solid var(--cyan);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:1.4rem;font-weight:900;color:var(--cyan)}
-    .proc-step h3{font-size:.97rem;font-weight:700;color:var(--navy);margin-bottom:7px}
-    .proc-step p{font-size:.82rem;color:var(--muted);line-height:1.6;max-width:190px;margin:0 auto}
+    .proc-steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+    .proc-steps::after{content:'';position:absolute;top:21px;left:calc(12.5% + 4px);right:calc(12.5% + 4px);height:1px;background:var(--mid);z-index:0}
+    .proc-step{text-align:center;padding:0 16px}
+    .proc-num{width:42px;height:42px;border-radius:50%;background:#fff;border:1.5px solid var(--mid);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:.83rem;font-weight:800;color:var(--cyan);position:relative;z-index:1}
+    .proc-step h3{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+    .proc-step p{font-size:.78rem;color:var(--muted);line-height:1.58;max-width:165px;margin:0 auto}
     .bio-in{display:grid;grid-template-columns:1fr 1.6fr;gap:64px;align-items:center}
     .bio-photo-wrap{position:relative}
     .bio-photo{width:100%;max-width:400px;height:500px;object-fit:cover;object-position:center 18%;border-radius:20px;box-shadow:0 20px 60px rgba(10,46,90,.2)}
@@ -156,6 +157,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .bio-in{grid-template-columns:1fr;gap:48px}
       .bio-photo{height:360px;max-width:100%}
       .bio-cred-float{right:0;bottom:-10px}
+      .proc-steps{grid-template-columns:repeat(2,1fr);gap:20px}
+      .proc-steps::after{display:none}
+    }
+    @media(max-width:480px){
+      .proc-steps{grid-template-columns:1fr;gap:16px}
     }
     .quiz-card{max-width:600px;margin:0 auto;background:#fff;border:1px solid var(--mid);border-radius:var(--r);padding:36px 32px}
     .quiz-prog{display:flex;align-items:center;gap:10px;margin-bottom:28px}
@@ -252,14 +258,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="sec sec-white">
+<section class="sec sec-light">
   <div class="wrap">
-    <div class="sh"><span class="badge">Como funciona</span><h2>Da consulta ao resultado</h2><p>Um caminho simples para você enxergar melhor</p></div>
+    <div class="sh"><span class="badge">Como funciona</span><h2>Quatro passos. Sem mistério, sem pressa.</h2><p>Da primeira mensagem até o acompanhamento, você sabe exatamente o que vai acontecer.</p></div>
     <div class="proc-steps">
-      <div class="proc-step"><div class="proc-num">1</div><h3>Agendamento</h3><p>Escolha o melhor dia pelo WhatsApp. Atendimento rápido e sem burocracia.</p></div>
-      <div class="proc-step"><div class="proc-num">2</div><h3>Consulta Completa</h3><p>Avaliação detalhada com exames modernos. O Dr. Bernardo explica cada etapa.</p></div>
-      <div class="proc-step"><div class="proc-num">3</div><h3>Diagnóstico e Plano</h3><p>Tratamento personalizado conforme seu perfil ocular e estilo de vida.</p></div>
-      <div class="proc-step"><div class="proc-num">4</div><h3>Resultado</h3><p>Acompanhamento próximo após o procedimento e visão transformada. O Dr. Bernardo acompanha cada paciente até o resultado final.</p></div>
+      <div class="proc-step"><div class="proc-num">1</div><h3>Você agenda pelo WhatsApp</h3><p>Sem formulário complicado, sem fila. Manda uma mensagem e nossa equipe confirma o horário.</p></div>
+      <div class="proc-step"><div class="proc-num">2</div><h3>Consulta completa, com calma</h3><p>O Dr. Bernardo examina seus olhos com equipamentos modernos. Pode e deve perguntar tudo.</p></div>
+      <div class="proc-step"><div class="proc-num">3</div><h3>Diagnóstico honesto, plano claro</h3><p>Você sai sabendo exatamente qual é a situação dos seus olhos e quais opções existem para o seu caso.</p></div>
+      <div class="proc-step"><div class="proc-num">4</div><h3>Tratamento com acompanhamento</h3><p>Seja uma cirurgia, uma prescrição ou exame de rotina: o Dr. Bernardo acompanha todo o processo.</p></div>
     </div>
   </div>
 </section>
