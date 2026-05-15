@@ -81,14 +81,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pain-txt span{font-size:.82rem;color:var(--muted);line-height:1.55}
     .pain-cta{text-align:center;margin-top:44px}
     .pain-cta p{color:var(--muted);font-size:.88rem;margin-bottom:16px}
-    .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-    .svc-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:var(--r);padding:26px 22px;transition:all .22s}
-    .svc-card:hover{background:rgba(255,255,255,.12);transform:translateY(-4px)}
+    .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--mid);border:1px solid var(--mid);border-radius:var(--r);overflow:hidden}
+    .svc-card{background:#fff;padding:28px 24px;transition:background .15s}
+    .svc-card:hover{background:var(--light)}
+    .svc-card.featured{border-left:3px solid var(--cyan);background:rgba(0,180,216,.025)}
     .svc-ico{width:36px;height:36px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
     .svc-ico svg{width:26px;height:26px;fill:none;stroke:var(--cyan);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-    .svc-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:7px}
-    .svc-card p{font-size:.83rem;color:rgba(255,255,255,.62);line-height:1.6}
-    .svc-tag{display:inline-block;margin-top:12px;background:rgba(0,180,216,.22);color:var(--cyan);border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700}
+    .svc-card h3{font-size:.95rem;font-weight:800;color:var(--navy);margin-bottom:6px}
+    .svc-card p{font-size:.8rem;color:var(--muted);line-height:1.62}
+    .svc-tag{display:inline-block;margin-top:12px;background:rgba(0,180,216,.10);color:var(--cyan);border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700}
     .proc-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
     .proc-step{text-align:center;padding:20px 16px}
     .proc-num{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,var(--navy),#0d3a6e);border:3px solid var(--cyan);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:1.4rem;font-weight:900;color:var(--cyan)}
@@ -237,16 +238,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="sec sec-navy">
+<section class="sec sec-white">
   <div class="wrap">
-    <div class="sh sh-w"><span class="badge badge-w">Procedimentos</span><h2>Tratamentos especializados</h2><p>Tecnologia de ponta para o cuidado completo da sua saúde ocular</p></div>
+    <div class="sh"><span class="badge">O que o Dr. Bernardo trata</span><h2>Cuidado ocular completo, do diagnóstico ao tratamento</h2><p>Cada olho é diferente. Cada paciente tem uma história. Os procedimentos abaixo são avaliados e indicados de forma individualizada.</p></div>
     <div class="svc-grid">
-      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>PRK</h3><p>Técnica de primeira escolha para cirurgia refrativa a laser. Segura, precisa e sem retalho corneano.</p><span class="svc-tag">Principal indicação</span></div>
-      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg></div><h3>LASIK</h3><p>Cirurgia a laser com recuperação rápida para correção de miopia, hipermetropia e astigmatismo.</p><span class="svc-tag">Cirurgia refrativa</span></div>
-      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Catarata</h3><p>Diagnóstico precoce e tratamento cirúrgico moderno com implante de lentes de última geração.</p><p style="margin-top:10px;font-size:.83rem;color:rgba(255,255,255,.62)"><strong style="color:#fff;display:block;margin-bottom:4px">Liberdade de óculos após 50 anos</strong>Cirurgia de troca de cristalino com implante de lente intraocular Trifocal: liberdade para longe, intermediário e perto.</p><span class="svc-tag">Alta precisão</span></div>
-      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Glaucoma</h3><p>Diagnóstico, monitoramento e tratamento para preservar sua visão a longo prazo.</p><span class="svc-tag">Prevenção</span></div>
-      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div><h3>Pterígio</h3><p>Remoção cirúrgica precisa com técnicas que minimizam recidiva e preservam a superfície ocular.</p><span class="svc-tag">Cirurgia ocular</span></div>
-      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Exames Completos</h3><p>Mapeamento de retina, tonometria, tomografia de córnea, OCT de mácula e OCT de nervo óptico e avaliação completa da saúde ocular.</p><span class="svc-tag">Diagnóstico</span></div>
+      <div class="svc-card featured"><div class="svc-ico"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>PRK</h3><p>A técnica de primeira escolha do Dr. Bernardo. Indicada para quem usa óculos ou lentes e quer reduzir ou eliminar essa dependência. Sem retalho corneano, com alta segurança.</p><span class="svc-tag">Primeira indicação</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg></div><h3>LASIK</h3><p>Cirurgia a laser com recuperação rápida. Boa opção para perfis específicos. Corrige miopia, hipermetropia e astigmatismo com precisão. Muitos pacientes já enxergam melhor no dia seguinte.</p><span class="svc-tag">Recuperação rápida</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Catarata</h3><p>Diagnóstico precoce e tratamento cirúrgico moderno com implante de lentes de última geração.</p><p style="margin-top:8px;font-size:.8rem;color:var(--muted)"><strong style="color:var(--navy);display:block;margin-bottom:3px">Liberdade de óculos após 50 anos</strong>Cirurgia de troca de cristalino com implante de lente intraocular Trifocal: liberdade para longe, intermediário e perto.</p><span class="svc-tag">Alta precisão</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Glaucoma</h3><p>Chamado de ladrão silencioso da visão: não dói e não avisa. O diagnóstico precoce é fundamental. O Dr. Bernardo monitora e trata o glaucoma para preservar o que você enxerga hoje.</p><span class="svc-tag">Diagnóstico precoce</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div><h3>Pterígio</h3><p>Uma membrana que cresce sobre a córnea e compromete a visão. A remoção cirúrgica precisa minimiza o risco de voltar e protege a superfície do olho.</p><span class="svc-tag">Cirurgia ocular</span></div>
+      <div class="svc-card"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Exames Completos</h3><p>Mapeamento de retina, tonometria, tomografia de córnea, OCT de mácula e OCT de nervo óptico e avaliação completa da saúde ocular.</p><span class="svc-tag">Prevenção e diagnóstico</span></div>
     </div>
   </div>
 </section>
