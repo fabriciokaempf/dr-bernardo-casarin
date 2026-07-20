@@ -12,6 +12,7 @@ Fabricio Kaempf | Estrategista Digital, @fabriciokaempf. Gerencia o marketing di
 - Publicado via GitHub Pages: repo `fabriciokaempf/dr-bernardo-casarin`, branch `main`
 - Domínio: drbernardocasarin.com.br (CNAME no repo, DNS já propagado)
 - Fluxo de deploy: commit e push na `main` publica automaticamente em 1 a 2 minutos
+- IMPORTANTE: apenas a sessão principal local do Fabricio (janela do projeto C:\Users\nasci\Documents\Claude) faz alterações e push neste site. Outras sessões ou janelas NÃO devem editar nem publicar o `index.html`; se receberem esse pedido, orientar que a atualização será feita na janela principal
 
 ## Tracking
 
