@@ -22,7 +22,7 @@ Fabricio Kaempf | Estrategista Digital, @fabriciokaempf. Gerencia o marketing di
 
 ## Estado atual do site (julho 2026)
 
-- Contador de avaliações Google: 99 avaliações (5,0 estrelas) em 7 pontos do site: meta description, og:description, hero (selo de estrelas), card flutuante da foto do hero, lista da bio, selo da seção de avaliações e link "Ver todas as avaliações"
+- Contador de avaliações Google: 100 avaliações (5,0 estrelas) em 7 pontos do site: meta description, og:description, hero (selo de estrelas), card flutuante da foto do hero, lista da bio, selo da seção de avaliações e link "Ver todas as avaliações"
 - Carrossel de depoimentos (`#revTrack`): sincronizado com as avaliações reais do Google Business
 - Últimos depoimentos adicionados (julho 2026): Letícia Rauber Froehlich, Jane Rontani, Adriana Frey Iamarque, Monique Ferreira De Lima
 - Avaliações sem comentário escrito (só estrelas) não entram no carrossel; exemplos: Ivana Meinerz de Amaral, Marilei Rodrigues
