@@ -30,7 +30,7 @@ Fabricio Kaempf | Estrategista Digital, @fabriciokaempf. Gerencia o marketing di
 
 ## Como atualizar o contador de avaliações
 
-1. Verificar o número atual na ficha do Google Business (o ambiente remoto do Claude não acessa google.com; pedir print ao Fabricio se necessário)
+1. Verificar o número atual na ficha do Google Business. Atenção: a extensão do Chrome consegue navegar até as páginas do Google, mas não consegue extrair o conteúdo delas. O `executeScript` estoura o tempo limite esperando `document_idle`, porque busca e Maps nunca ficam ociosos (o Instagram tem o mesmo comportamento). Portanto a conferência do número depende do Fabricio, por print ou confirmação direta, e não deve ser dada como verificada de forma independente
 2. Substituir todas as ocorrências de "NN avaliações" no `index.html` (7 pontos)
 3. Considerar adicionar depoimentos novos ao carrossel: cards `.rev-card` dentro de `#revTrack`, cada um com o SVG do logo Google, estrelas e texto exato do comentário
 4. As bolinhas de navegação do carrossel são geradas por JavaScript a partir da contagem de cards, não precisam de ajuste manual
