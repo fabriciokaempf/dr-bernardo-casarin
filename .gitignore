@@ -1,0 +1,15 @@
+# Material de trabalho interno, nao publicar no site
+post-100/
+outputs/
+*.bak
+*.bak.html
+index.html.bak
+
+# Documentos comerciais e internos
+proposta-*.pdf
+guia-secretaria-*.pdf
+gerar_*.py
+
+# Fotos e recortes de origem
+Fotos Instagram/
+ig_*.jpg
