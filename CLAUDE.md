@@ -20,13 +20,14 @@ Fabricio Kaempf | Estrategista Digital, @fabriciokaempf. Gerencia o marketing di
 - Google Ads: conversão configurada, rótulo corrigido (Rgx1CLbpkLccENOB-ND), Tag Assistant confirmou envio
 - Campanha ativa: Search | Captação | Regional | Oftalmologista
 
-## Estado atual do site (agosto 2026)
+## Estado atual do site (outubro 2026)
 
-- Contador de avaliações Google: 111 avaliações (5,0 estrelas) em 7 pontos do site: meta description, og:description, hero (selo de estrelas), card flutuante da foto do hero, lista da bio, selo da seção de avaliações e link "Ver todas as avaliações"
-- Carrossel de depoimentos (`#revTrack`): 29 cards, sincronizado com as avaliações reais do Google Business. Depoimentos novos entram no início da lista.
-- Últimos depoimentos adicionados (24/08/2026): Camila Papalia, Talia Chaves
-- Antes disso (julho 2026): Letícia Rauber Froehlich, Jane Rontani, Adriana Frey Iamarque, Monique Ferreira De Lima
-- Avaliações sem comentário escrito (só estrelas) não entram no carrossel; exemplos: Ivana Meinerz de Amaral, Marilei Rodrigues, Ana Paula Schuaitzer, Flavia Silva
+- Contador de avaliações Google: 116 avaliações (5,0 estrelas) em 7 pontos do site: meta description, og:description, hero (selo de estrelas), card flutuante da foto do hero, lista da bio, selo da seção de avaliações e link "Ver todas as avaliações"
+- Carrossel de depoimentos (`#revTrack`): 31 cards, sincronizado com as avaliações reais do Google Business. Depoimentos novos entram no início da lista.
+- Últimos depoimentos adicionados (02/10/2026): Jéssica Santana, Jordana Schneider
+- Antes disso (24/08/2026): Camila Papalia, Talia Chaves
+- E antes (julho 2026): Letícia Rauber Froehlich, Jane Rontani, Adriana Frey Iamarque, Monique Ferreira De Lima
+- Avaliações sem comentário escrito (só estrelas) não entram no carrossel; exemplos: Ivana Meinerz de Amaral, Marilei Rodrigues, Ana Paula Schuaitzer, Flavia Silva, miriam de lima. Conforme o Fabricio, a maioria dos pacientes avalia só com estrelas, sem escrever comentário, então o carrossel cresce bem mais devagar que o contador
 
 ## Como atualizar o contador de avaliações
 
