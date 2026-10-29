@@ -432,6 +432,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<section class="sec sec-light" id="valor">
+  <div class="wrap">
+    <div class="sh"><span class="badge">Valor da cirurgia</span><h2>Quanto custa a cirurgia refrativa em Santa Rosa?</h2><p>Não existe um preço único, e não é por falta de transparência: o valor depende do seu olho. Veja o que entra na conta e como receber o seu orçamento.</p></div>
+    <div class="pain-grid">
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div><div class="pain-txt"><strong>A técnica indicada: PRK ou LASIK</strong><span>Quem define é a espessura e o formato da sua córnea, não a preferência. Cada técnica tem custo e cuidados pós-operatórios diferentes.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div><div class="pain-txt"><strong>O grau a corrigir</strong><span>Miopia, hipermetropia e astigmatismo, em graus diferentes, pedem planejamentos diferentes do laser.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div class="pain-txt"><strong>Os exames da avaliação pré-cirúrgica</strong><span>Topografia, paquimetria e mapeamento da córnea. São eles que dizem se você é candidato e qual técnica é segura para o seu caso.</span></div></div>
+    </div>
+    <div class="sh" style="margin-top:48px"><h2 style="font-size:1.35rem">Por que o valor só sai depois da avaliação?</h2><p>Porque cada olho é diferente, e porque o Conselho Federal de Medicina proíbe divulgar preço de procedimento médico. O orçamento é entregue a você, pessoalmente, já com a técnica indicada e tudo o que está incluso.</p></div>
+    <div class="proc-steps">
+      <div class="proc-step"><div class="proc-num">1</div><h3>Agende pelo WhatsApp</h3><p>Fale direto com o Dr. Bernardo e escolha um horário.</p></div>
+      <div class="proc-step"><div class="proc-num">2</div><h3>Avaliação completa</h3><p>Exames da córnea e consulta com o Dr. Bernardo, com calma e sem pressa.</p></div>
+      <div class="proc-step"><div class="proc-num">3</div><h3>Técnica e orçamento</h3><p>Você recebe a indicação, PRK ou LASIK, e o valor detalhado do seu caso.</p></div>
+      <div class="proc-step"><div class="proc-num">4</div><h3>Decisão no seu tempo</h3><p>Leve o orçamento para casa. Decida quando fizer sentido para você.</p></div>
+    </div>
+    <div class="pain-cta"><p>A avaliação é o único caminho para um orçamento honesto.</p><a id="vCta" href="https://wa.me/555581203181?text=Ol%C3%A1!+Vi+no+site+sobre+o+valor+da+cirurgia+refrativa+e+gostaria+de+agendar+minha+avalia%C3%A7%C3%A3o." class="btn btn-wa" target="_blank" rel="noreferrer">Agende a avaliação e receba seu orçamento</a><p style="margin-top:18px;font-size:.78rem">Dr. Bernardo Casarin &middot; CRM 38337 RS &middot; RQE 34894</p></div>
+  </div>
+</section>
+
 <section class="sec sec-navy">
   <div class="wrap">
     <div class="sh sh-w"><span class="badge badge-w">Dúvidas frequentes</span><h2>Perguntas que os pacientes fazem</h2></div>
@@ -588,8 +607,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var greeting=fromAds?'Oi, tudo bem?':'Olá!';
   var msgPadrao=greeting+' Vim pelo site do Dr. Bernardo Casarin e gostaria de mais informações.';
   var msgQuiz=greeting+' Fiz o quiz no site e gostaria de agendar minha avaliação com o Dr. Bernardo Casarin.';
+  var msgValor=greeting+' Vi no site sobre o valor da cirurgia refrativa e gostaria de agendar minha avaliação.';
   document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
-    var m=(a.id==='qCta')?msgQuiz:msgPadrao;
+    var m=(a.id==='qCta')?msgQuiz:(a.id==='vCta')?msgValor:msgPadrao;
     try{var u=new URL(a.href);u.searchParams.set('text',m);a.href=u.toString();}catch(e){}
   });
 })();
