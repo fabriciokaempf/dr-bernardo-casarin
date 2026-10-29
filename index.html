@@ -195,7 +195,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quiz-reset{display:block;margin:12px auto 0;background:none;border:none;color:var(--muted);font-size:.77rem;cursor:pointer;font-family:var(--f);transition:color .2s}
     .quiz-reset:hover{color:var(--navy)}
     @media(max-width:600px){.quiz-card{padding:22px 16px}}
-  </style>
+  
+/* secao #valor: acordeao em fundo claro e qualificacao */
+#valor .faq-list{margin-top:14px}
+#valor .faq-item{background:#fff;border:1px solid var(--mid)}
+#valor .faq-q{color:var(--navy)}
+#valor .faq-a{color:var(--muted)}
+#valor .faq-ico{background:rgba(0,180,216,.12)}
+#valor .quiz-card{margin-top:40px}
+#valor .quiz-done{display:none;text-align:center;color:var(--navy);font-weight:600;font-size:.9rem;margin-top:6px}
+#valor .quiz-done.active{display:block}
+#valor .quiz-opt.sel{border-color:var(--cyan);background:rgba(0,180,216,.06);color:var(--navy)}
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -447,7 +458,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="proc-step"><div class="proc-num">3</div><h3>Técnica e orçamento</h3><p>Você recebe a indicação, PRK ou LASIK, e o valor detalhado do seu caso.</p></div>
       <div class="proc-step"><div class="proc-num">4</div><h3>Decisão no seu tempo</h3><p>Leve o orçamento para casa. Decida quando fizer sentido para você.</p></div>
     </div>
+    <div class="quiz-card" id="vCard">
+      <div class="quiz-prog">
+        <span class="quiz-prog-label" id="vCount">Monte sua mensagem: 1 de 3</span>
+        <div class="quiz-bars"><div class="quiz-bar done" id="vb0"></div><div class="quiz-bar" id="vb1"></div><div class="quiz-bar" id="vb2"></div></div>
+      </div>
+      <div class="quiz-step active" id="vs0">
+        <p class="quiz-q">Há quanto tempo você usa óculos ou lentes?</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" onclick="vNext(this,0,'uso óculos ou lentes há menos de 2 anos')">Menos de 2 anos</button>
+          <button class="quiz-opt" onclick="vNext(this,0,'uso óculos ou lentes entre 2 e 10 anos')">Entre 2 e 10 anos</button>
+          <button class="quiz-opt" onclick="vNext(this,0,'uso óculos ou lentes há mais de 10 anos')">Mais de 10 anos</button>
+          <button class="quiz-opt" onclick="vNext(this,0,'não uso óculos nem lentes')">Não uso</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="vs1">
+        <p class="quiz-q">Seu grau, mais ou menos? Não precisa ser exato.</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" onclick="vNext(this,1,'meu grau fica em torno de até 2')">Até 2 graus</button>
+          <button class="quiz-opt" onclick="vNext(this,1,'meu grau fica entre 2 e 6')">Entre 2 e 6 graus</button>
+          <button class="quiz-opt" onclick="vNext(this,1,'meu grau passa de 6')">Acima de 6 graus</button>
+          <button class="quiz-opt" onclick="vNext(this,1,'não sei meu grau de cabeça')">Não sei de cabeça</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="vs2">
+        <p class="quiz-q">Já fez algum exame da córnea, como topografia?</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" onclick="vNext(this,2,'nunca fiz exame da córnea')">Nunca fiz</button>
+          <button class="quiz-opt" onclick="vNext(this,2,'já fiz exame da córnea, mas faz tempo')">Já fiz, faz tempo</button>
+          <button class="quiz-opt" onclick="vNext(this,2,'fiz exame da córnea recentemente')">Fiz recentemente</button>
+        </div>
+      </div>
+      <p class="quiz-done" id="vDone">Pronto. Sua mensagem já está montada, é só tocar no botão abaixo.</p>
+      <button class="quiz-reset" onclick="vReset()">Recomeçar</button>
+    </div>
     <div class="pain-cta"><p>A avaliação é o único caminho para um orçamento honesto.</p><a id="vCta" href="https://wa.me/555581203181?text=Ol%C3%A1!+Vi+no+site+sobre+o+valor+da+cirurgia+refrativa+e+gostaria+de+agendar+minha+avalia%C3%A7%C3%A3o." class="btn btn-wa" target="_blank" rel="noreferrer">Agende a avaliação e receba seu orçamento</a><p style="margin-top:18px;font-size:.78rem">Dr. Bernardo Casarin &middot; CRM 38337 RS &middot; RQE 34894</p></div>
+    <div class="sh" style="margin-top:44px;margin-bottom:0"><h2 style="font-size:1.2rem">Dúvidas sobre o orçamento</h2></div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)">O orçamento inclui os exames?<span class="faq-ico">+</span></button><div class="faq-a">O orçamento que você recebe na avaliação discrimina o que está incluso, inclusive como ficam os exames e os retornos. Nada fica implícito para você descobrir depois.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)">Plano de saúde cobre a cirurgia refrativa?<span class="faq-ico">+</span></button><div class="faq-a">Pelas regras da ANS, os planos cobrem a cirurgia a laser em situações específicas, ligadas ao grau e ao tipo de correção. Leve a carteirinha na avaliação: o Dr. Bernardo confere se o seu caso se enquadra e orienta o caminho.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)">Os dois olhos entram no mesmo orçamento?<span class="faq-ico">+</span></button><div class="faq-a">Sim. O orçamento considera os dois olhos, e o planejamento do laser é feito para cada um, porque eles podem ter graus e córneas diferentes.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="faq(this)">Posso levar o orçamento para pensar em casa?<span class="faq-ico">+</span></button><div class="faq-a">Pode, e deve. Você sai da avaliação com a técnica indicada e o valor do seu caso, e decide no seu tempo. Ninguém vai te apressar.</div></div>
+    </div>
   </div>
 </section>
 
@@ -596,6 +648,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 <script>
+var vAns=['','',''];
+function vMsg(){
+  var g=window.__leadGreet||'Olá!';
+  var partes=vAns.filter(Boolean).join(', ');
+  if(!partes)return g+' Vi no site sobre o valor da cirurgia refrativa e gostaria de agendar minha avaliação.';
+  return g+' Vi no site sobre o valor da cirurgia refrativa. '+partes.charAt(0).toUpperCase()+partes.slice(1)+'. Gostaria de agendar minha avaliação.';
+}
+function vApply(){
+  var a=document.getElementById('vCta');
+  try{var u=new URL(a.href);u.searchParams.set('text',vMsg());a.href=u.toString();}catch(e){}
+}
+function vNext(btn,i,txt){
+  vAns[i]=txt;
+  var step=document.getElementById('vs'+i);
+  step.querySelectorAll('.quiz-opt').forEach(function(b){b.classList.remove('sel');});
+  btn.classList.add('sel');
+  if(i<2){
+    step.classList.remove('active');
+    document.getElementById('vs'+(i+1)).classList.add('active');
+    document.getElementById('vb'+(i+1)).classList.add('done');
+    document.getElementById('vCount').textContent='Monte sua mensagem: '+(i+2)+' de 3';
+  }else{
+    document.getElementById('vDone').classList.add('active');
+    document.getElementById('vCount').textContent='Mensagem pronta';
+  }
+  vApply();
+}
+function vReset(){
+  vAns=['','',''];
+  for(var i=0;i<3;i++){
+    document.getElementById('vs'+i).classList.toggle('active',i===0);
+    document.getElementById('vb'+i).classList.toggle('done',i===0);
+    document.querySelectorAll('#vs'+i+' .quiz-opt').forEach(function(b){b.classList.remove('sel');});
+  }
+  document.getElementById('vDone').classList.remove('active');
+  document.getElementById('vCount').textContent='Monte sua mensagem: 1 de 3';
+  vApply();
+}
+</script>
+<script>
 /* Origem do lead: ajusta a saudação da mensagem do WhatsApp.
    Anúncio (gclid/utm pago) => "Oi, tudo bem?" | Orgânico/direto => "Olá!" */
 (function(){
@@ -605,6 +697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var fromAds=p.has('gclid')||p.has('gbraid')||p.has('wbraid')||
     med==='cpc'||med==='ppc'||med==='paid'||(src==='google'&&med&&med!=='organic');
   var greeting=fromAds?'Oi, tudo bem?':'Olá!';
+  window.__leadGreet=greeting;
   var msgPadrao=greeting+' Vim pelo site do Dr. Bernardo Casarin e gostaria de mais informações.';
   var msgQuiz=greeting+' Fiz o quiz no site e gostaria de agendar minha avaliação com o Dr. Bernardo Casarin.';
   var msgValor=greeting+' Vi no site sobre o valor da cirurgia refrativa e gostaria de agendar minha avaliação.';
