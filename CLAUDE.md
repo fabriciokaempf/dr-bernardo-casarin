@@ -44,6 +44,7 @@ Fabricio Kaempf | Estrategista Digital, @fabriciokaempf. Gerencia o marketing di
 - Corpo da mensagem neutro: "Vim pelo site do Dr. Bernardo Casarin e gostaria de mais informações."
 - Botão do Quiz (`#qCta`) tem mensagem própria: "Fiz o quiz no site e gostaria de agendar minha avaliação..."
 - Botão da seção de valor (`#vCta`, seção `#valor`) tem mensagem própria: "Vi no site sobre o valor da cirurgia refrativa e gostaria de agendar minha avaliação." e aponta para o **WhatsApp pessoal do Dr. Bernardo** (`wa.me/555581203181`, link testado por ele em 29/10/2026). Todos os outros botões seguem no número da clínica (55) 99935-3304
+- A seção `#valor` tem uma qualificação em 3 toques (`#vCard`, funções `vNext`/`vReset`): tempo de uso de óculos, faixa de grau aproximada e exame de córnea. As respostas entram na mensagem do `#vCta` em primeira pessoa, sempre precedidas da saudação de origem (`window.__leadGreet`). Não trava o botão: sem resposta, vale a mensagem padrão. Abaixo do CTA há um acordeão "Dúvidas sobre o orçamento" (reaproveita `faq()`, com variante clara via `#valor .faq-*`). Nenhum item cita preço, desconto ou parcelamento
 - Acionador "Clique WhatsApp" no GTM: condição `Click URL contém wa.me`, sem número fixo (conferido no gtm.js publicado em 29/10/2026). Qualquer novo botão wa.me conta na conversão sem mexer no GTM
 - PDF guia para a secretária explicando isso: `guia-secretaria-origem-lead.pdf` (gerado por `gerar_guia_secretaria.py`, ReportLab, 1 página, com a marca do Fabricio)
 
