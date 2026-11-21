@@ -20,9 +20,9 @@ Fabricio Kaempf | Estrategista Digital, @fabriciokaempf. Gerencia o marketing di
 - Google Ads: conversão configurada, rótulo corrigido (Rgx1CLbpkLccENOB-ND), Tag Assistant confirmou envio
 - Campanha ativa: Search | Captação | Regional | Oftalmologista
 
-## Estado atual do site (outubro 2026)
+## Estado atual do site (novembro 2026)
 
-- Contador de avaliações Google: 116 avaliações (5,0 estrelas) em 7 pontos do site: meta description, og:description, hero (selo de estrelas), card flutuante da foto do hero, lista da bio, selo da seção de avaliações e link "Ver todas as avaliações"
+- Contador de avaliações Google: 128 avaliações (5,0 estrelas) em 7 pontos do site: meta description, og:description, hero (selo de estrelas), card flutuante da foto do hero, lista da bio, selo da seção de avaliações e link "Ver todas as avaliações"
 - Carrossel de depoimentos (`#revTrack`): 31 cards, sincronizado com as avaliações reais do Google Business. Depoimentos novos entram no início da lista.
 - Últimos depoimentos adicionados (02/10/2026): Jéssica Santana, Jordana Schneider
 - Antes disso (24/08/2026): Camila Papalia, Talia Chaves
