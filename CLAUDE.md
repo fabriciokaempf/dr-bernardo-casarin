@@ -23,9 +23,10 @@ Fabricio Kaempf | Estrategista Digital, @fabriciokaempf. Gerencia o marketing di
 ## Estado atual do site (novembro 2026)
 
 - Contador de avaliações Google: 128 avaliações (5,0 estrelas) em 7 pontos do site: meta description, og:description, hero (selo de estrelas), card flutuante da foto do hero, lista da bio, selo da seção de avaliações e link "Ver todas as avaliações"
-- Carrossel de depoimentos (`#revTrack`): 31 cards, sincronizado com as avaliações reais do Google Business. Depoimentos novos entram no início da lista.
-- Últimos depoimentos adicionados (02/10/2026): Jéssica Santana, Jordana Schneider
-- Antes disso (24/08/2026): Camila Papalia, Talia Chaves
+- Carrossel de depoimentos (`#revTrack`): 32 cards, sincronizado com as avaliações reais do Google Business. Depoimentos novos entram no início da lista.
+- Últimos depoimentos adicionados (21/11/2026): Luciane Camargo, com a frase final "o melhor médico oftalmo que temos em Santa Rosa e região" cortada por ser adjetivo de superioridade (Art. 14 do CFM). Critério: trecho literal, só removendo superlativos
+- Antes disso (02/10/2026): Jéssica Santana, Jordana Schneider
+- E antes (24/08/2026): Camila Papalia, Talia Chaves
 - E antes (julho 2026): Letícia Rauber Froehlich, Jane Rontani, Adriana Frey Iamarque, Monique Ferreira De Lima
 - Avaliações sem comentário escrito (só estrelas) não entram no carrossel; exemplos: Ivana Meinerz de Amaral, Marilei Rodrigues, Ana Paula Schuaitzer, Flavia Silva, miriam de lima. Conforme o Fabricio, a maioria dos pacientes avalia só com estrelas, sem escrever comentário, então o carrossel cresce bem mais devagar que o contador
 
