@@ -501,6 +501,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="faq-item"><button class="faq-q" onclick="faq(this)">Os dois olhos entram no mesmo orçamento?<span class="faq-ico">+</span></button><div class="faq-a">Sim. O orçamento considera os dois olhos, e o planejamento do laser é feito para cada um, porque eles podem ter graus e córneas diferentes.</div></div>
       <div class="faq-item"><button class="faq-q" onclick="faq(this)">Posso levar o orçamento para pensar em casa?<span class="faq-ico">+</span></button><div class="faq-a">Pode, e deve. Você sai da avaliação com a técnica indicada e o valor do seu caso, e decide no seu tempo. Ninguém vai te apressar.</div></div>
     </div>
+
+    <div id="valor-catarata" style="scroll-margin-top:80px">
+    <div class="sh" style="margin-top:72px"><span class="badge">Cirurgia de catarata</span><h2>E a cirurgia de catarata, quanto custa?</h2><p>Também não existe um preço único. O valor da cirurgia de catarata depende principalmente da lente que vai substituir o cristalino e do que o seu plano de saúde cobre. Tudo isso é definido na avaliação.</p></div>
+    <div class="pain-grid">
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div><div class="pain-txt"><strong>O tipo de lente intraocular</strong><span>A lente monofocal corrige uma distância. A tórica também corrige o astigmatismo. A multifocal ou trifocal pode reduzir a dependência dos óculos para perto e longe. Cada uma tem um custo diferente.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div class="pain-txt"><strong>Os exames pré-operatórios</strong><span>Biometria e mapeamento do olho calculam o grau exato da lente. São eles que garantem que a escolha da lente seja precisa para o seu caso.</span></div></div>
+      <div class="pain-item"><div class="pain-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></svg></div><div class="pain-txt"><strong>A cobertura do plano de saúde</strong><span>A cirurgia de catarata faz parte da cobertura obrigatória dos planos, pelas regras da ANS. Quando a escolha é por uma lente especial, pode haver diferença a pagar. O Dr. Bernardo explica cada opção na consulta.</span></div></div>
+    </div>
+    <div class="quiz-card" id="cCard">
+      <div class="quiz-prog">
+        <span class="quiz-prog-label" id="cCount">Monte sua mensagem: 1 de 2</span>
+        <div class="quiz-bars"><div class="quiz-bar done" id="cb0"></div><div class="quiz-bar" id="cb1"></div></div>
+      </div>
+      <div class="quiz-step active" id="cs0">
+        <p class="quiz-q">Você já recebeu diagnóstico de catarata?</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" onclick="cNext(this,0,'já tenho diagnóstico de catarata')">Sim, já tenho</button>
+          <button class="quiz-opt" onclick="cNext(this,0,'ainda não tenho diagnóstico, mas desconfio de catarata')">Ainda não, mas desconfio</button>
+          <button class="quiz-opt" onclick="cNext(this,0,'estou buscando informação para um familiar')">É para um familiar</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="cs1">
+        <p class="quiz-q">Tem plano de saúde?</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" onclick="cNext(this,1,'tenho plano de saúde')">Tenho plano</button>
+          <button class="quiz-opt" onclick="cNext(this,1,'seria particular')">Seria particular</button>
+          <button class="quiz-opt" onclick="cNext(this,1,'ainda não sei se o plano cobre')">Não sei se cobre</button>
+        </div>
+      </div>
+      <p class="quiz-done" id="cDone">Pronto. Sua mensagem já está montada, é só tocar no botão abaixo.</p>
+      <button class="quiz-reset" onclick="cReset()">Recomeçar</button>
+    </div>
+    <div class="pain-cta"><p>Na avaliação, você conhece as opções de lente e sai com o orçamento do seu caso.</p><a id="cCta" href="https://wa.me/555581203181?text=Ol%C3%A1!+Vi+no+site+sobre+o+valor+da+cirurgia+de+catarata+e+gostaria+de+agendar+minha+avalia%C3%A7%C3%A3o." class="btn btn-wa" target="_blank" rel="noreferrer">Agende a avaliação de catarata</a></div>
+    </div>
   </div>
 </section>
 
@@ -687,6 +721,44 @@ function vReset(){
   document.getElementById('vCount').textContent='Monte sua mensagem: 1 de 3';
   vApply();
 }
+var cAns=['',''];
+function cMsg(){
+  var g=window.__leadGreet||'Olá!';
+  var partes=cAns.filter(Boolean).join(', ');
+  if(!partes)return g+' Vi no site sobre o valor da cirurgia de catarata e gostaria de agendar minha avaliação.';
+  return g+' Vi no site sobre o valor da cirurgia de catarata. '+partes.charAt(0).toUpperCase()+partes.slice(1)+'. Gostaria de agendar minha avaliação.';
+}
+function cApply(){
+  var a=document.getElementById('cCta');
+  try{var u=new URL(a.href);u.searchParams.set('text',cMsg());a.href=u.toString();}catch(e){}
+}
+function cNext(btn,i,txt){
+  cAns[i]=txt;
+  var step=document.getElementById('cs'+i);
+  step.querySelectorAll('.quiz-opt').forEach(function(b){b.classList.remove('sel');});
+  btn.classList.add('sel');
+  if(i<1){
+    step.classList.remove('active');
+    document.getElementById('cs'+(i+1)).classList.add('active');
+    document.getElementById('cb'+(i+1)).classList.add('done');
+    document.getElementById('cCount').textContent='Monte sua mensagem: '+(i+2)+' de 2';
+  }else{
+    document.getElementById('cDone').classList.add('active');
+    document.getElementById('cCount').textContent='Mensagem pronta';
+  }
+  cApply();
+}
+function cReset(){
+  cAns=['',''];
+  for(var i=0;i<2;i++){
+    document.getElementById('cs'+i).classList.toggle('active',i===0);
+    document.getElementById('cb'+i).classList.toggle('done',i===0);
+    document.querySelectorAll('#cs'+i+' .quiz-opt').forEach(function(b){b.classList.remove('sel');});
+  }
+  document.getElementById('cDone').classList.remove('active');
+  document.getElementById('cCount').textContent='Monte sua mensagem: 1 de 2';
+  cApply();
+}
 </script>
 <script>
 /* Origem do lead: ajusta a saudação da mensagem do WhatsApp.
@@ -703,7 +775,8 @@ function vReset(){
   var msgQuiz=greeting+' Fiz o quiz no site e gostaria de agendar minha avaliação com o Dr. Bernardo Casarin.';
   var msgValor=greeting+' Vi no site sobre o valor da cirurgia refrativa e gostaria de agendar minha avaliação.';
   document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
-    var m=(a.id==='qCta')?msgQuiz:(a.id==='vCta')?msgValor:msgPadrao;
+    var msgCatarata=greeting+' Vi no site sobre o valor da cirurgia de catarata e gostaria de agendar minha avaliação.';
+    var m=(a.id==='qCta')?msgQuiz:(a.id==='vCta')?msgValor:(a.id==='cCta')?msgCatarata:msgPadrao;
     try{var u=new URL(a.href);u.searchParams.set('text',m);a.href=u.toString();}catch(e){}
   });
 })();
