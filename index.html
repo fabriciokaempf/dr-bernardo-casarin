@@ -722,11 +722,14 @@ function vReset(){
   vApply();
 }
 var cAns=['',''];
+function cOrigem(){
+  return window.__leadFromAds?'Vi o anúncio do Google sobre a cirurgia de catarata e li no site sobre o valor':'Vi no site sobre o valor da cirurgia de catarata';
+}
 function cMsg(){
   var g=window.__leadGreet||'Olá!';
   var partes=cAns.filter(Boolean).join(', ');
-  if(!partes)return g+' Vi no site sobre o valor da cirurgia de catarata e gostaria de agendar minha avaliação.';
-  return g+' Vi no site sobre o valor da cirurgia de catarata. '+partes.charAt(0).toUpperCase()+partes.slice(1)+'. Gostaria de agendar minha avaliação.';
+  if(!partes)return g+' '+cOrigem()+'. Gostaria de agendar minha avaliação de catarata com o Dr. Bernardo.';
+  return g+' '+cOrigem()+'. '+partes.charAt(0).toUpperCase()+partes.slice(1)+'. Gostaria de agendar minha avaliação de catarata com o Dr. Bernardo.';
 }
 function cApply(){
   var a=document.getElementById('cCta');
@@ -771,11 +774,12 @@ function cReset(){
     med==='cpc'||med==='ppc'||med==='paid'||(src==='google'&&med&&med!=='organic');
   var greeting=fromAds?'Oi, tudo bem?':'Olá!';
   window.__leadGreet=greeting;
+  window.__leadFromAds=fromAds;
   var msgPadrao=greeting+' Vim pelo site do Dr. Bernardo Casarin e gostaria de mais informações.';
   var msgQuiz=greeting+' Fiz o quiz no site e gostaria de agendar minha avaliação com o Dr. Bernardo Casarin.';
   var msgValor=greeting+' Vi no site sobre o valor da cirurgia refrativa e gostaria de agendar minha avaliação.';
   document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
-    var msgCatarata=greeting+' Vi no site sobre o valor da cirurgia de catarata e gostaria de agendar minha avaliação.';
+    var msgCatarata=(typeof cMsg==='function')?cMsg():greeting+' Vi no site sobre o valor da cirurgia de catarata. Gostaria de agendar minha avaliação de catarata com o Dr. Bernardo.';
     var m=(a.id==='qCta')?msgQuiz:(a.id==='vCta')?msgValor:(a.id==='cCta')?msgCatarata:msgPadrao;
     try{var u=new URL(a.href);u.searchParams.set('text',m);a.href=u.toString();}catch(e){}
   });
